@@ -15,10 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="badge-2.svg"
-   inkscape:export-filename="C:\Users\Kimmo\Vectorgfx\missionbadge.png"
-   inkscape:export-xdpi="125.98788"
-   inkscape:export-ydpi="125.98788">
+   sodipodi:docname="badge-3.svg"
+   inkscape:export-filename="C:\Users\Kimmo\Vectorgfx\missionbadger.png"
+   inkscape:export-xdpi="62.993942"
+   inkscape:export-ydpi="62.993942">
   <defs
      id="defs4">
     <clipPath
@@ -49,6 +49,48 @@
          d="m 664.28572,114 a 178.57143,178.57143 0 1 1 -357.14285,0 178.57143,178.57143 0 1 1 357.14285,0 z"
          transform="matrix(0.69855842,0,0,0.69855842,146.41447,-141.05358)" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3129-4">
+      <path
+         sodipodi:type="arc"
+         style="fill:#000039;fill-opacity:1;stroke:none;display:inline"
+         id="path3131-0"
+         sodipodi:cx="485.71429"
+         sodipodi:cy="114"
+         sodipodi:rx="178.57143"
+         sodipodi:ry="178.57143"
+         d="m 664.28572,114 a 178.57143,178.57143 0 1 1 -357.14285,0 178.57143,178.57143 0 1 1 357.14285,0 z"
+         transform="matrix(0.69855842,0,0,0.69855842,146.41447,-141.05358)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3129-48">
+      <path
+         sodipodi:type="arc"
+         style="fill:#000039;fill-opacity:1;stroke:none;display:inline"
+         id="path3131-8"
+         sodipodi:cx="485.71429"
+         sodipodi:cy="114"
+         sodipodi:rx="178.57143"
+         sodipodi:ry="178.57143"
+         d="m 664.28572,114 a 178.57143,178.57143 0 1 1 -357.14285,0 178.57143,178.57143 0 1 1 357.14285,0 z"
+         transform="matrix(0.69855842,0,0,0.69855842,146.41447,-141.05358)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3950">
+      <path
+         sodipodi:type="arc"
+         style="fill:#000039;fill-opacity:1;stroke:none;display:inline"
+         id="path3952"
+         sodipodi:cx="485.71429"
+         sodipodi:cy="114"
+         sodipodi:rx="178.57143"
+         sodipodi:ry="178.57143"
+         d="m 664.28572,114 a 178.57143,178.57143 0 1 1 -357.14285,0 178.57143,178.57143 0 1 1 357.14285,0 z"
+         transform="matrix(0.65374561,0,0,0.65374561,168.1807,-124.69179)" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -58,8 +100,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="248.52812"
-     inkscape:cy="406.28134"
+     inkscape:cx="344.7506"
+     inkscape:cy="43.163444"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="false"
@@ -113,17 +155,28 @@
        sodipodi:cy="114"
        sodipodi:rx="178.57143"
        sodipodi:ry="178.57143"
-       d="m 664.28572,114 c 0,98.62228 -79.94915,178.57143 -178.57143,178.57143 -98.62227,0 -178.57142,-79.94915 -178.57142,-178.57143 0,-98.622276 79.94915,-178.571426 178.57142,-178.571426 98.62228,0 178.57143,79.94915 178.57143,178.571426 z"
+       d="m 664.28572,114 a 178.57143,178.57143 0 1 1 -357.14285,0 178.57143,178.57143 0 1 1 357.14285,0 z"
        transform="matrix(1.9401545,0,0,1.9401545,-430.28938,133.92192)" />
     <path
        sodipodi:type="arc"
-       style="fill:#baa54d;fill-opacity:1;stroke:#5f6e35;stroke-opacity:1;stroke-width:2.58410028;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#505a53;fill-opacity:0.3244681;stroke:none;display:inline"
+       id="path3806-7-1"
+       sodipodi:cx="485.71429"
+       sodipodi:cy="114"
+       sodipodi:rx="178.57143"
+       sodipodi:ry="178.57143"
+       d="m 664.28572,114 a 178.57143,178.57143 0 1 1 -357.14285,0 178.57143,178.57143 0 1 1 357.14285,0 z"
+       transform="matrix(2.9677515,0,0,2.9677515,-929.40791,503.97617)"
+       clip-path="url(#clipPath3950)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#baa54d;fill-opacity:1;stroke:#5f6e35;stroke-width:2.58410025;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path3806-7"
        sodipodi:cx="485.71429"
        sodipodi:cy="114"
        sodipodi:rx="178.57143"
        sodipodi:ry="178.57143"
-       d="m 664.28572,114 c 0,98.62228 -79.94915,178.57143 -178.57143,178.57143 -98.62227,0 -178.57142,-79.94915 -178.57142,-178.57143 0,-98.622276 79.94915,-178.571426 178.57142,-178.571426 98.62228,0 178.57143,79.94915 178.57143,178.571426 z"
+       d="m 664.28572,114 a 178.57143,178.57143 0 1 1 -357.14285,0 178.57143,178.57143 0 1 1 357.14285,0 z"
        transform="matrix(2.777369,0,0,2.777369,-836.9364,525.67978)"
        clip-path="url(#clipPath3129)" />
     <rect
@@ -171,6 +224,40 @@
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="m 739.63808,163.35004 -73.97907,15.12073 -15.12074,73.97907 -15.12074,-73.97907 -73.97907,-15.12073 73.97907,-15.12074 15.12074,-73.979071 15.12074,73.979071 z" />
+    <path
+       transform="matrix(0.34810442,0,0,0.34810442,505.90537,172.14709)"
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
+       id="path3849-0-1"
+       sodipodi:sides="4"
+       sodipodi:cx="650.53827"
+       sodipodi:cy="163.35004"
+       sodipodi:r1="89.099808"
+       sodipodi:r2="21.383953"
+       sodipodi:arg1="0"
+       sodipodi:arg2="0.78539816"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 739.63808,163.35004 -73.97907,15.12073 -15.12074,73.97907 -15.12074,-73.97907 -73.97907,-15.12073 73.97907,-15.12074 15.12074,-73.979071 15.12074,73.979071 z" />
+    <path
+       transform="matrix(0.24069336,0,0,0.24069336,535.22412,252.80108)"
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline"
+       id="path3849-0-1-7"
+       sodipodi:sides="4"
+       sodipodi:cx="650.53827"
+       sodipodi:cy="163.35004"
+       sodipodi:r1="89.099808"
+       sodipodi:r2="21.383953"
+       sodipodi:arg1="0"
+       sodipodi:arg2="0.78539816"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 739.63808,163.35004 -73.97907,15.12073 -15.12074,73.97907 -15.12074,-73.97907 -73.97907,-15.12073 73.97907,-15.12074 15.12074,-73.979071 15.12074,73.979071 z"
+       inkscape:transform-center-x="4.1907602"
+       inkscape:transform-center-y="-10.127673" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -251,6 +338,18 @@
        transform="matrix(1.9401545,0,0,1.9401545,-430.28938,133.92194)"
        inkscape:export-xdpi="125.99"
        inkscape:export-ydpi="125.99" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#be3000;stroke-width:13.8514742;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path3806-1-9"
+       sodipodi:cx="485.71429"
+       sodipodi:cy="114"
+       sodipodi:rx="178.57143"
+       sodipodi:ry="178.57143"
+       d="m 664.28572,114 a 178.57143,178.57143 0 1 1 -357.14285,0 178.57143,178.57143 0 1 1 357.14285,0 z"
+       transform="matrix(1.9401545,0,0,1.9401545,-430.28938,133.92194)"
+       inkscape:export-xdpi="125.99"
+       inkscape:export-ydpi="125.99" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -276,14 +375,11 @@
        transform="matrix(-1.4085558,-0.44574006,0.44574006,-1.4085558,1145.4127,732.17724)" />
     <text
        xml:space="preserve"
-       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:10.85999393000000000px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:TitilliumMaps29L;-inkscape-font-specification:TitilliumMaps29L"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:278.99993515%;letter-spacing:10.85999393000000000px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:TitilliumMaps29L;-inkscape-font-specification:TitilliumMaps29L"
        id="text4114"
-       sodipodi:linespacing="125%"><textPath
+       sodipodi:linespacing="1000%"><textPath
          xlink:href="#path3806-4-5"
-         id="textPath4120">PIONEER<tspan
-   id="tspan4118"
-   y="266.03922"
-   x="282.84375"
-   style="font-style:normal;letter-spacing:10.85999393000000000px;-inkscape-font-specification:TitilliumMaps29L;font-family:TitilliumMaps29L;font-weight:normal;font-stretch:normal;font-variant:normal" /></textPath></text>
+         id="textPath4120"
+         style="line-height:1000%;font-size:64px">PIONEER</textPath></text>
   </g>
 </svg>
