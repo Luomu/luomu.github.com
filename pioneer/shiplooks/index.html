@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			img {
+				display: block;
+				margin: 5px;
+			}
+			
+			body {
+				max-width: 900px;
+				font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+				font-size:14px
+			}
+			
+			.grad {
+				width: 50px;
+				height: 20px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+<body>
+	<h2>Ship appearance customization thingy</h2>
+	<p>I've come up with some updates to ship appearance &amp; customization possibilities. Customization is fun.</p>
+	<h2>Selectable patterns and colours</h2>
+	<p>Here's our bland test ship (the shots here are not from the game - this would require more work. Shaders are <a href="https://gist.github.com/1365986">here</a> in any case.).</p>
+	<img src="bland01.png" />
+	<p>It is textured with <b>one</b> (mostly) grayscale texture, 1024x1024 in this case.</p>
+	<img src="silly_diffuse_t.jpg" />
+
+	<p>To customize this appearance, we can pick a pattern and three colours (selectable for the player at a shipyard, presets and randomized for NPCs). Patterns are grayscale textures that determine colour areas on the ship, and use the same UV channel as the ship texture. Here are three different patterns:</p>
+	<img src="bland_pattern1.png" />
+	<img src="bland_pattern2.png" />
+	<img src="bland_pattern3.png" />
+	<p>These can be quite small (Even 32x32, if there is no fine detail). The results looks like this:</p>
+	<img src="soik01.PNG" />
+	<img src="soik04.PNG" />
+	<img src="soik02.PNG" />
+	<img src="soik05.PNG" />
+
+	Same model, slightly more exotic patterns:
+	<img src="plasma01.PNG" />
+	Pirates, probably!
+	<img src="waves01.PNG" />
+
+	<p>Patterns are <b>ship model specific</b>, colours can be anything. Since the ship model is neatly unwrapped and uses only one texture, new patterns can be made quickly without altering the models or adding huge textures.</p>
+	<p>Colours themselves are passed as generated 1d textures (zoomed in here):</p>
+	<img src="gradient.png" class="grad" />
+	<img src="gradient2.png" class="grad" />
+	<img src="gradient6.png" class="grad" />
+
+	<h2>Specular maps</h2>
+	<p>Hottest new techniques from early/mid 2000s :)</p>
+
+	<p>Grayscale maps that determine intensity of specular highlights to break the evenness. Every model should support them.</p>
+
+	<p>This one has a car paint like effect:</p>
+	<img src="carpaint.PNG" />
+	<img src="specular03.PNG" />
+	Looks better in motion than in images...
+	<img src="specular04.PNG" />
+	<img src="specular05.PNG" />
+	<p>This one is more traditional dust &amp; scratches variety:</p>
+	<img src="scratches.PNG" />
+	<img src="specular06.PNG" />
+	<img src="specular07.PNG" />
+	<img src="specular08.PNG" />
+	<img src="specular02.PNG" />
+
+	<h2>Decals</h2>
+	<p>Small textures projected onto ships, for faction logos, corporation insignia etc.</p>
+	<p>I've not yet figured out what's the best way to implement the decal support. Probably set the projector position &amp; direction in .lua, generate the texture coordinates to a spare texture channel. There would probably be one decal texture per model limitation.</p>
+	<img src="decal02.png" />
+	The projection here is achieved by luck+hand tweaked.
+	<img src="decal03.png" />
+
+	<h2>Glow maps</h2>
+	<p>Already in game in some form, but all ship models should support them.</p>
+
+	<h2>Shaderless fallback</h2>
+	<p>One colour, No patterns, no decals, no specular or glow maps.</p>
+	
+	<h2>Quality considerations</h2>
+	<p>You can already do a bunch of things with scripting tricks, material arguments and splitting up geometry but there has been no requirement for modellers to support anything. Having more limitations and requirements would help us towards more unified appearance.</p>
+</body>
+</html>
