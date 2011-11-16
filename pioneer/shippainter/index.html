@@ -39,29 +39,55 @@
 
 			uniform sampler2D baseMap;
 			uniform sampler2D patternMap;
+			uniform sampler2D colorMap;
+			uniform sampler2D specularMap;
+			uniform sampler2D glowMap;
 
 #define COLORMAP
+#define SPECULARMAP
+#define GLOWMAP
 
 			void main()
 			{
 				vec3 fvLightDirection = normalize(lightDirection);
 				vec3 fvNormal         = normalize(Normal);
-				vec4 fvBaseColor      = texture2D(baseMap, texCoord);
 
 				float nDotL           = dot(fvNormal, fvLightDirection);
+				vec3  fvReflection    = normalize( ( ( 2.0 * fvNormal ) * nDotL ) - fvLightDirection );
+				vec3  fvViewDirection = normalize( viewDirection );
+				float fRDotV          = max( 0.0, dot(fvReflection, fvViewDirection) );
 #ifdef COLORMAP
 				vec4  pattern         = texture2D(patternMap, texCoord);
-				fvBaseColor           = pattern;
+				vec4 color            = texture2D(colorMap, vec2(pattern.r, 0.0));
+				vec4 fvBaseColor      = texture2D(baseMap, texCoord) * color;
+#else
+				vec4 fvBaseColor      = texture2D(baseMap, texCoord);
 #endif
 
+				vec4 fvAmbient = vec4(0.0);
+#ifdef GLOWMAP
+				vec4 glowColor        = texture2D(glowMap, texCoord);
+				fvAmbient += glowColor;
+#endif
+				vec4  fvTotalAmbient   = fvAmbient * fvBaseColor;
+
+				float fSpecularPower = 25.0;
+				vec4 fvSpecular = vec4(1.0, 0.0, 0.0, 1.0);
+#ifdef SPECULARMAP
+				float specpow         = 0.8;
+				vec4 specu            = specpow * texture2D(specularMap, texCoord);
+				vec4  fvTotalSpecular  = specu * ( pow( fRDotV, fSpecularPower ) );
+#else
+				vec4 fvTotalSpecular  = fvSpecular * pow( fRDotV, fSpecularPower );
+#endif
 				vec4 fvTotalDiffuse = nDotL * fvBaseColor;
 				fvTotalDiffuse.w = 1.0;
-				gl_FragColor = fvTotalDiffuse;
+				gl_FragColor = ( fvTotalAmbient + fvTotalDiffuse + fvTotalSpecular );
 			}
 		</script>
 	</head>
 	<body>
-		<h1>Thingy</h1>
+		<!--<h1>Thingy</h1>-->
 		<b>MOVE</b> mouse &amp; press <b>LEFT/A:</b> rotate, <b>MIDDLE/S:</b> zoom, <b>RIGHT/D:</b> pan
 		<script>
 			var radius = 7;
@@ -114,10 +140,10 @@
 				light1.position.y = 3;
 				light1.position.z = 0;
 				scene.add( light1 );
-				var sphere = new THREE.SphereGeometry( 0.5, 16, 8 );
-				var l1 = new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xff0040 } ) );
-				l1.position = light1.position;
-				scene.add( l1 );
+				//var sphere = new THREE.SphereGeometry( 0.5, 16, 8 );
+				//var l1 = new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xff0040 } ) );
+				//l1.position = light1.position;
+				//scene.add( l1 );
 
 				//textures
 
@@ -125,8 +151,11 @@
 				uniforms = {
 					lightPosition: { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
 					eyePosition:   { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
-					baseMap:       { type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "uvgrid.jpg" ) },
-					patternMap:    { type: "t", value: 1, texture: THREE.ImageUtils.loadTexture( "pattern_camo.png" ) },
+					baseMap:       { type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "diffuse.png" ) },
+					patternMap:    { type: "t", value: 1, texture: THREE.ImageUtils.loadTexture( "pattern04.png" ) },
+					specularMap:   { type: "t", value: 2, texture: THREE.ImageUtils.loadTexture( "specular_01.png" ) },
+					colorMap:      { type: "t", value: 3, texture: THREE.ImageUtils.loadTexture( "gradient06.png" ) },
+					glowMap:       { type: "t", value: 4, texture: THREE.ImageUtils.loadTexture( "glowmap.png" ) },
 				};
 
 				materialShip = new THREE.ShaderMaterial({
@@ -179,4 +208,5 @@
 			}
 		</script>
 	</body>
+	<br />yesyes, I left the back of the model unfinished
 </html>
