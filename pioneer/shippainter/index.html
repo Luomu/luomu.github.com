@@ -7,6 +7,22 @@
 		</style>
 		<script src="../../js/Three.js"></script>
 		<script src="../../js/RequestAnimationFrame.js"></script>
+
+		<script id="fragmentShader" type="x-shader/x-fragment">
+			void main()
+			{
+				gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);
+			}
+		</script>
+
+		<script id="vertexShader" type="x-shader/x-vertex">
+			void main()
+			{
+				vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+				gl_Position = projectionMatrix * mvPosition;
+
+			}
+		</script>
 	</head>
 	<body>
 		<h1>Thingy</h1>
@@ -69,13 +85,21 @@
 				//textures
 
 				//shaders
+				uniforms = {
+
+				};
+				materialShip = new THREE.ShaderMaterial({
+					uniforms: uniforms,
+					vertexShader: document.getElementById( 'vertexShader' ).textContent,
+					fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+				});
 
 				// objects
 				var loader = new THREE.JSONLoader(true);
 				document.body.appendChild( loader.statusDomElement );
 
 				var callback = function(geometry) {
-					object = new THREE.Mesh( geometry, new THREE.MeshBasicMaterial( { color: 0xff0040 } )  );
+					object = new THREE.Mesh( geometry, materialShip);
 					object.scale.x = object.scale.y = object.scale.z = 0.5;
 					scene.add( object );
 					loader.statusDomElement.style.display = "none";
