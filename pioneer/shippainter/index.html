@@ -9,8 +9,11 @@
 		<script src="../../js/RequestAnimationFrame.js"></script>
 
 		<script id="vertexShader" type="x-shader/x-vertex">
+			varying vec2 texCoord;
+
 			void main()
 			{
+				texCoord = uv;
 				vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
 				gl_Position = projectionMatrix * mvPosition;
 
@@ -18,9 +21,13 @@
 		</script>
 
 		<script id="fragmentShader" type="x-shader/x-fragment">
+			varying vec2 texCoord;
+			uniform sampler2D baseMap;
+
 			void main()
 			{
-				gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);
+				vec4 fvBaseColor = texture2D(baseMap, texCoord);
+				gl_FragColor = fvBaseColor;
 			}
 		</script>
 	</head>
@@ -86,7 +93,7 @@
 
 				//shaders
 				uniforms = {
-
+					baseMap: { type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "uvgrid.jpg" ) },
 				};
 				materialShip = new THREE.ShaderMaterial({
 					uniforms: uniforms,
