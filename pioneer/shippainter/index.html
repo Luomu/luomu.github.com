@@ -22,7 +22,7 @@
 				vec4 objectPosition = modelViewMatrix * vec4(position, 1.0);
 				gl_Position         = projectionMatrix * objectPosition;
 
-				Normal              = normal;
+				Normal              = normalMatrix * normal;
 
 				viewDirection       = eyePosition - objectPosition.xyz;
 				lightDirection      = lightPosition - objectPosition.xyz;
