@@ -36,17 +36,26 @@
 			varying vec3 lightDirection;
 			varying vec3 Normal;
 			varying vec2 texCoord;
+
 			uniform sampler2D baseMap;
+			uniform sampler2D patternMap;
+
+#define COLORMAP
 
 			void main()
 			{
 				vec3 fvLightDirection = normalize(lightDirection);
-				vec3 fvNormal = normalize(Normal);
-				vec4 fvBaseColor = texture2D(baseMap, texCoord);
+				vec3 fvNormal         = normalize(Normal);
+				vec4 fvBaseColor      = texture2D(baseMap, texCoord);
 
-				float nDotL = dot(fvNormal, fvLightDirection);
+				float nDotL           = dot(fvNormal, fvLightDirection);
+#ifdef COLORMAP
+				vec4  pattern         = texture2D(patternMap, texCoord);
+				fvBaseColor           = pattern;
+#endif
 
 				vec4 fvTotalDiffuse = nDotL * fvBaseColor;
+				fvTotalDiffuse.w = 1.0;
 				gl_FragColor = fvTotalDiffuse;
 			}
 		</script>
@@ -117,6 +126,7 @@
 					lightPosition: { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
 					eyePosition:   { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
 					baseMap:       { type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "uvgrid.jpg" ) },
+					patternMap:    { type: "t", value: 1, texture: THREE.ImageUtils.loadTexture( "pattern_camo.png" ) },
 				};
 
 				materialShip = new THREE.ShaderMaterial({
@@ -162,7 +172,7 @@
 
 			function render() {
 				uniforms.viewPosition = camera.position;
-				uniforms.lightPosition = light1.position;
+				uniforms.lightPosition.z = light1.position;
 				controls.update()
 				renderer.clear();
 				renderer.render(scene, camera);
