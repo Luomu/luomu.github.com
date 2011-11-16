@@ -9,25 +9,45 @@
 		<script src="../../js/RequestAnimationFrame.js"></script>
 
 		<script id="vertexShader" type="x-shader/x-vertex">
+			uniform vec3 lightPosition;
+			uniform vec3 eyePosition;
+
 			varying vec2 texCoord;
+			varying vec3 viewDirection;
+			varying vec3 lightDirection;
+			varying vec3 Normal;
 
 			void main()
 			{
-				texCoord = uv;
-				vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
-				gl_Position = projectionMatrix * mvPosition;
+				vec4 objectPosition = modelViewMatrix * vec4(position, 1.0);
+				gl_Position         = projectionMatrix * objectPosition;
 
+				Normal              = normal;
+
+				viewDirection       = eyePosition - objectPosition.xyz;
+				lightDirection      = lightPosition - objectPosition.xyz;
+
+				texCoord            = uv;
 			}
 		</script>
 
 		<script id="fragmentShader" type="x-shader/x-fragment">
+			varying vec3 viewDirection;
+			varying vec3 lightDirection;
+			varying vec3 Normal;
 			varying vec2 texCoord;
 			uniform sampler2D baseMap;
 
 			void main()
 			{
+				vec3 fvLightDirection = normalize(lightDirection);
+				vec3 fvNormal = normalize(Normal);
 				vec4 fvBaseColor = texture2D(baseMap, texCoord);
-				gl_FragColor = fvBaseColor;
+
+				float nDotL = dot(fvNormal, fvLightDirection);
+
+				vec4 fvTotalDiffuse = nDotL * fvBaseColor;
+				gl_FragColor = fvTotalDiffuse;
 			}
 		</script>
 	</head>
@@ -37,7 +57,7 @@
 		<script>
 			var radius = 7;
 			var width = 800, height = 800,
-			container, camera, controls, scene, renderer;
+			container, camera, controls, scene, renderer, uniforms, light1;
 
 			window.onload = function() {
 				//todo - add webgl detector check
@@ -81,8 +101,9 @@
 
 				//lights
 				//scene.add( new THREE.AmbientLight( 0xffffff ) );
-				var light1 = new THREE.PointLight( 0xff0040, 2, 50 );
-				light1.position.z = 100;
+				light1 = new THREE.PointLight( 0xff0040, 2, 50 );
+				light1.position.y = 3;
+				light1.position.z = 0;
 				scene.add( light1 );
 				var sphere = new THREE.SphereGeometry( 0.5, 16, 8 );
 				var l1 = new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xff0040 } ) );
@@ -93,8 +114,11 @@
 
 				//shaders
 				uniforms = {
-					baseMap: { type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "uvgrid.jpg" ) },
+					lightPosition: { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
+					eyePosition:   { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
+					baseMap:       { type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "uvgrid.jpg" ) },
 				};
+
 				materialShip = new THREE.ShaderMaterial({
 					uniforms: uniforms,
 					vertexShader: document.getElementById( 'vertexShader' ).textContent,
@@ -137,6 +161,8 @@
 			}
 
 			function render() {
+				uniforms.viewPosition = camera.position;
+				uniforms.lightPosition = light1.position;
 				controls.update()
 				renderer.clear();
 				renderer.render(scene, camera);
