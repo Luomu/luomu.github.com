@@ -8,19 +8,19 @@
 		<script src="../../js/Three.js"></script>
 		<script src="../../js/RequestAnimationFrame.js"></script>
 
-		<script id="fragmentShader" type="x-shader/x-fragment">
-			void main()
-			{
-				gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);
-			}
-		</script>
-
 		<script id="vertexShader" type="x-shader/x-vertex">
 			void main()
 			{
 				vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
 				gl_Position = projectionMatrix * mvPosition;
 
+			}
+		</script>
+
+		<script id="fragmentShader" type="x-shader/x-fragment">
+			void main()
+			{
+				gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);
 			}
 		</script>
 	</head>
