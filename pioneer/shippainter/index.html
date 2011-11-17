@@ -4,7 +4,18 @@
 		<title>Ship Materials Demo</title>
 		<meta charset="utf-8">
 		<style>
+			#controlsbox {
+				padding: 10px;
+				position: fixed;
+				right: 0;
+				background-color: #dae7e6;
+			}
+
+			select {
+				display: block;
+			}
 		</style>
+		<script src="../../js/jquery.min.js"></script>
 		<script src="../../js/Three.js"></script>
 		<script src="../../js/RequestAnimationFrame.js"></script>
 
@@ -93,6 +104,7 @@
 			var radius = 7;
 			var width = 800, height = 800,
 			container, camera, controls, scene, renderer, uniforms, light1;
+			var patterns;
 
 			window.onload = function() {
 				//todo - add webgl detector check
@@ -146,14 +158,28 @@
 				//scene.add( l1 );
 
 				//textures
+				patterns = {
+					"blank01" : THREE.ImageUtils.loadTexture("pattern_black.png"),
+					"blank02" : THREE.ImageUtils.loadTexture("pattern_white.png"),
+					"wild01" : THREE.ImageUtils.loadTexture("pattern_blobs.png"),
+					"wild02" : THREE.ImageUtils.loadTexture("pattern_wavy.png"),
+					"wild03" : THREE.ImageUtils.loadTexture("pattern_camo.png"),
+					"mystery" : THREE.ImageUtils.loadTexture("decal_mushroom.png"),
+				};
+
+				speculars = {
+					"none" : THREE.ImageUtils.loadTexture("pattern_white.png"),
+					"flakes" : THREE.ImageUtils.loadTexture("specular_flakes.png"),
+					"scratches" : THREE.ImageUtils.loadTexture("specular_scratches.png"),
+				};
 
 				//shaders
 				uniforms = {
 					lightPosition: { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
 					eyePosition:   { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
 					baseMap:       { type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "diffuse.png" ) },
-					patternMap:    { type: "t", value: 1, texture: THREE.ImageUtils.loadTexture( "pattern04.png" ) },
-					specularMap:   { type: "t", value: 2, texture: THREE.ImageUtils.loadTexture( "specular_01.png" ) },
+					patternMap:    { type: "t", value: 1, texture: THREE.ImageUtils.loadTexture( "pattern02.png" ) },
+					specularMap:   { type: "t", value: 2, texture: speculars["flakes"] },
 					colorMap:      { type: "t", value: 3, texture: THREE.ImageUtils.loadTexture( "gradient06.png" ) },
 					glowMap:       { type: "t", value: 4, texture: THREE.ImageUtils.loadTexture( "glowmap.png" ) },
 				};
@@ -177,6 +203,8 @@
 				loader.load( "Sillyship.js", callback );
 
 				window.addEventListener('resize', onWindowResize, false );
+
+				populateMenus();
 			}
 
 			function onWindowResize(event) {
@@ -200,13 +228,44 @@
 			}
 
 			function render() {
-				uniforms.viewPosition = camera.position;
-				uniforms.lightPosition.z = light1.position;
+				uniforms.eyePosition.value = camera.position;
+				uniforms.lightPosition.value = light1.position;
 				controls.update()
 				renderer.clear();
 				renderer.render(scene, camera);
 			}
+
+			function lightChange() {
+				light1.position.y = $('#lightSwitch').prop("checked") ? -500 : 3;
+			}
+
+			function patternChange() {
+				uniforms.patternMap.texture = patterns[$("#pattern").val()];
+			}
+
+			function specularChange() {
+				uniforms.specularMap.texture = speculars[$("#specular").val()];
+			}
+
+			function populateMenus() {
+				$.each(patterns, function(key, value) {
+					console.log(key);
+					$("#pattern").append(new Option(key, key));
+				});
+			}
 		</script>
 	</body>
 	<br />yesyes, I left the back of the model unfinished
+	<div id="controlsbox">
+		<input type="checkbox" id="lightSwitch" name="lightState" onchange="lightChange();"/>Make it dark<br />
+		Pattern
+		<select id="pattern" onchange="patternChange();">
+		</select>
+		Specular map
+		<select id="specular" onchange="specularChange();">
+			<option value="flakes">Flakes</option>
+			<option value="scratches">Scratches</option>
+			<option value="none">None</option>
+		</select>
+	</div>
 </html>
