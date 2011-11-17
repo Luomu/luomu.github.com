@@ -161,6 +161,10 @@
 				patterns = {
 					"blank01" : THREE.ImageUtils.loadTexture("pattern_black.png"),
 					"blank02" : THREE.ImageUtils.loadTexture("pattern_white.png"),
+					"stripe01" : THREE.ImageUtils.loadTexture("pattern_onestripe.png"),
+					"stripe02" : THREE.ImageUtils.loadTexture("pattern_stripe02.png"),
+					"stripe03" : THREE.ImageUtils.loadTexture("pattern_stripe03.png"),
+					"nose" : THREE.ImageUtils.loadTexture("pattern_nose.png"),
 					"wild01" : THREE.ImageUtils.loadTexture("pattern_blobs.png"),
 					"wild02" : THREE.ImageUtils.loadTexture("pattern_wavy.png"),
 					"wild03" : THREE.ImageUtils.loadTexture("pattern_camo.png"),
@@ -169,8 +173,26 @@
 
 				speculars = {
 					"none" : THREE.ImageUtils.loadTexture("pattern_white.png"),
-					"flakes" : THREE.ImageUtils.loadTexture("specular_flakes.png"),
-					"scratches" : THREE.ImageUtils.loadTexture("specular_scratches.png"),
+					"flakes" : THREE.ImageUtils.loadTexture("specular_flakes.jpg"),
+					"scratches" : THREE.ImageUtils.loadTexture("specular_scratches.jpg"),
+				};
+
+				var lt = function(name) {
+					return THREE.ImageUtils.loadTexture(name);
+				}
+
+				colours = {
+					"Hospital" : lt("gradient06.png"),
+					"Hot dog stand" : lt("gradient01.png"),
+					"Blue-green" : lt("gradient02.png"),
+					"Blueberry" : lt("gradient03.png"),
+					"Egg" : lt("gradient04.png"),
+					"Hot pink" : lt("gradient05.png"),
+					"Mint aubergine" : lt("gradient07.png"),
+					"RGB" : lt("gradient08.png"),
+					"Lime" : lt("gradient09.png"),
+					"White green" : lt("gradient10.png"),
+					"Black-orange" : lt("gradient11.png"),
 				};
 
 				//shaders
@@ -178,9 +200,9 @@
 					lightPosition: { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
 					eyePosition:   { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
 					baseMap:       { type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "diffuse.png" ) },
-					patternMap:    { type: "t", value: 1, texture: THREE.ImageUtils.loadTexture( "pattern02.png" ) },
+					patternMap:    { type: "t", value: 1, texture: patterns["blank01"] },
 					specularMap:   { type: "t", value: 2, texture: speculars["flakes"] },
-					colorMap:      { type: "t", value: 3, texture: THREE.ImageUtils.loadTexture( "gradient06.png" ) },
+					colorMap:      { type: "t", value: 3, texture: colours["Hospital"] },
 					glowMap:       { type: "t", value: 4, texture: THREE.ImageUtils.loadTexture( "glowmap.png" ) },
 				};
 
@@ -243,14 +265,21 @@
 				uniforms.patternMap.texture = patterns[$("#pattern").val()];
 			}
 
+			function colourchange() {
+				uniforms.colorMap.texture = colours[$("#colour").val()];
+			}
+
 			function specularChange() {
 				uniforms.specularMap.texture = speculars[$("#specular").val()];
 			}
 
 			function populateMenus() {
 				$.each(patterns, function(key, value) {
-					console.log(key);
 					$("#pattern").append(new Option(key, key));
+				});
+
+				$.each(colours, function(key, value) {
+					$("#colour").append(new Option(key, key));
 				});
 			}
 		</script>
@@ -261,6 +290,8 @@
 		Pattern
 		<select id="pattern" onchange="patternChange();">
 		</select>
+		Colour scheme
+		<select id="colour" onchange="colourchange();"></select>
 		Specular map
 		<select id="specular" onchange="specularChange();">
 			<option value="flakes">Flakes</option>
