@@ -27,6 +27,7 @@
 			varying vec3 viewDirection;
 			varying vec3 lightDirection;
 			varying vec3 Normal;
+			varying vec4 decalCoord;
 
 			void main()
 			{
@@ -39,6 +40,9 @@
 				lightDirection      = lightPosition - objectPosition.xyz;
 
 				texCoord            = uv;
+
+				//hack hack hack your boat gently down the stream
+				decalCoord          = vec4(position.x+0.5, position.z-0.65, position.y, 1.0);
 			}
 		</script>
 
@@ -47,16 +51,19 @@
 			varying vec3 lightDirection;
 			varying vec3 Normal;
 			varying vec2 texCoord;
+			varying vec4 decalCoord;
 
 			uniform sampler2D baseMap;
 			uniform sampler2D patternMap;
 			uniform sampler2D colorMap;
 			uniform sampler2D specularMap;
 			uniform sampler2D glowMap;
+			uniform sampler2D decalMap;
 
 #define COLORMAP
 #define SPECULARMAP
 #define GLOWMAP
+#define DECAL
 
 			void main()
 			{
@@ -73,6 +80,11 @@
 				vec4 fvBaseColor      = texture2D(baseMap, texCoord) * color;
 #else
 				vec4 fvBaseColor      = texture2D(baseMap, texCoord);
+#endif
+
+#ifdef DECAL
+				vec4 decalColor       = texture2DProj(decalMap, decalCoord);
+				fvBaseColor           = mix(fvBaseColor, decalColor, decalColor.a * 0.9);
 #endif
 
 				vec4 fvAmbient = vec4(0.0);
@@ -104,7 +116,7 @@
 			var radius = 7;
 			var width = 800, height = 800,
 			container, camera, controls, scene, renderer, uniforms, light1;
-			var patterns;
+			var patterns, decals;
 
 			window.onload = function() {
 				//todo - add webgl detector check
@@ -195,6 +207,12 @@
 					"Black-orange" : lt("gradient11.png"),
 				};
 
+				decals = {
+					"none"     : lt("decal_none.png"),
+					"pioneer"  : lt("decal_pioneer.png"),
+					"mushroom" : lt("decal_mushroom.png"),
+				}
+
 				//shaders
 				uniforms = {
 					lightPosition: { type: "v3", value: new THREE.Vector3( 0, 0, 0 ) },
@@ -204,6 +222,7 @@
 					specularMap:   { type: "t", value: 2, texture: speculars["flakes"] },
 					colorMap:      { type: "t", value: 3, texture: colours["Hospital"] },
 					glowMap:       { type: "t", value: 4, texture: THREE.ImageUtils.loadTexture( "glowmap.png" ) },
+					decalMap:      { type: "t", value: 5, texture: decals["none"] },
 				};
 
 				materialShip = new THREE.ShaderMaterial({
@@ -273,6 +292,10 @@
 				uniforms.specularMap.texture = speculars[$("#specular").val()];
 			}
 
+			function decalChange() {
+				uniforms.decalMap.texture = decals[$("#decal").val()];
+			}
+
 			function populateMenus() {
 				$.each(patterns, function(key, value) {
 					$("#pattern").append(new Option(key, key));
@@ -284,7 +307,7 @@
 			}
 		</script>
 	</body>
-	<br />yesyes, I left the back of the model unfinished
+	<br />If the model hasn't updated, delete your cache
 	<div id="controlsbox">
 		<input type="checkbox" id="lightSwitch" name="lightState" onchange="lightChange();"/>Make it dark<br />
 		Pattern
@@ -297,6 +320,12 @@
 			<option value="flakes">Flakes</option>
 			<option value="scratches">Scratches</option>
 			<option value="none">None</option>
+		</select>
+		Decal
+		<select id="decal" onchange="decalChange();">
+			<option value="none">None</option>
+			<option value="pioneer">Pioneer</option>
+			<option value="mushroom">Mushroom</option>
 		</select>
 	</div>
 </html>
