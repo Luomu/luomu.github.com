@@ -11,13 +11,36 @@
 				background-color: #dae7e6;
 			}
 
-			select {
+			select, input {
 				display: block;
 			}
 		</style>
 		<script src="../../js/jquery.min.js"></script>
 		<script src="../../js/Three.js"></script>
 		<script src="../../js/RequestAnimationFrame.js"></script>
+
+		<script id="shieldVtx" type="x-shader/x-vertex">
+		varying vec2 texCoord0;
+
+		void main()
+		{
+			vec4 objectPosition = modelViewMatrix * vec4(position, 1.0);
+			gl_Position = projectionMatrix * objectPosition;
+			texCoord0 = uv;
+		}
+		</script>
+		<script id="shieldFrag" type="x-shader/x-vertex">
+		varying vec2 texCoord0;
+		uniform sampler2D texture0;
+		uniform float pan;
+
+		void main()
+		{
+			vec2 tc = texCoord0 + vec2(0.0, pan);
+			gl_FragColor = texture2D(texture0, tc);
+			gl_FragColor.a *= texCoord0.y;
+		}
+		</script>
 
 		<script id="vertexShader" type="x-shader/x-vertex">
 			uniform vec3 lightPosition;
@@ -113,6 +136,7 @@
 		<!--<h1>Thingy</h1>-->
 		<b>MOVE</b> mouse &amp; press <b>LEFT/A:</b> rotate, <b>MIDDLE/S:</b> zoom, <b>RIGHT/D:</b> pan
 		<script>
+			var animating = false; //shield animation
 			var radius = 7;
 			var width = 800, height = 800,
 			container, camera, controls, scene, renderer, uniforms, light1;
@@ -231,6 +255,26 @@
 					fragmentShader: document.getElementById( 'fragmentShader' ).textContent
 				});
 
+				shieldUniforms = {
+					pan: { type: "f", value: -1.48 },
+					texture0: {
+						type: "t", value: 0, texture: THREE.ImageUtils.loadTexture( "pish.png" ),
+					},
+				};
+				//shieldUniforms.texture0.texture.wrapS = THREE.ClampToEdgeWrapping;
+				//shieldUniforms.texture0.texture.wrapT = THREE.ClampToEdgeWrapping;
+				shieldUniforms.texture0.texture.wrapS = THREE.MirroredRepeatWrapping;
+				shieldUniforms.texture0.texture.wrapT = THREE.MirroredRepeatWrapping;
+
+				materialShield = new THREE.ShaderMaterial({
+					uniforms: shieldUniforms,
+					vertexShader: document.getElementById( 'shieldVtx' ).textContent,
+					fragmentShader: document.getElementById( 'shieldFrag' ).textContent,
+					blending: THREE.AdditiveBlending,
+					transparent: true,
+					depthWrite: false,
+				});
+
 				// objects
 				var loader = new THREE.JSONLoader(true);
 				document.body.appendChild( loader.statusDomElement );
@@ -241,7 +285,20 @@
 					scene.add( object );
 					loader.statusDomElement.style.display = "none";
 				};
+
+				var callback2 = function(geometry) {
+					object = new THREE.Mesh( geometry, materialShield);
+					object.scale.x = object.scale.y = object.scale.z = 1.0;
+					object.scale.y = 0.5;
+					object.position.z = 0.7;
+					object.position.y = 0.4;
+					object.doubleSided = true;
+					object.rotation.x = 0.3;
+					scene.add( object );
+					loader.statusDomElement.style.display = "none";
+				};
 				loader.load( "Sillyship.js", callback );
+				loader.load( "shield.js", callback2);
 
 				window.addEventListener('resize', onWindowResize, false );
 
@@ -263,8 +320,20 @@
 				camera.radius = (width + height) / 4;
 			}
 
+			function updateShield() {
+				if (animating) {
+					shieldUniforms.pan.value += 0.05;
+				}
+				if (shieldUniforms.pan.value > 0.34) {
+					shieldUniforms.pan.value = -1.48;
+					animating = false;
+				}
+				
+			}
+
 			function animate() {
 				requestAnimationFrame(animate);
+				updateShield();
 				render();
 			}
 
@@ -305,6 +374,12 @@
 					$("#colour").append(new Option(key, key));
 				});
 			}
+
+			function onDamage() {
+				if (animating == false) {
+					animating = true;
+				}
+			}
 		</script>
 	</body>
 	<br />If the model hasn't updated, delete your cache
@@ -327,5 +402,6 @@
 			<option value="pioneer">Pioneer</option>
 			<option value="mushroom">Mushroom</option>
 		</select>
+		<input type="button" value="Hit me!" onclick="onDamage();"/>
 	</div>
 </html>
