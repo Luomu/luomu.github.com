@@ -1,0 +1,7 @@
+V581 The conditional expressions of the 'if' operators situated alongside each other are identical. Check lines: 274, 291. luaconsole.cpp 291
+V519 The 'p' variable is assigned values twice successively. Perhaps this is a mistake. Check lines: 22, 31. mtrand.cpp 31
+V556 The values of different enum types are compared: switch(ENUM_TYPE_A) { case ENUM_TYPE_B: ... }. starsystem.cpp 1094
+V612 An unconditional 'break' within a loop. starsystem.cpp 1882
+V523 The 'then' statement is equivalent to the 'else' statement. terrainheightruggedlava.cpp 64
+V523 The 'then' statement is equivalent to the 'else' statement. terrainheightruggedlava.cpp 68
+V524 It is odd that the body of 'OnMouseUp' function is fully equivalent to the body of 'OnMouseDown' function (guicontainer.cpp, line 212). guicontainer.cpp 217

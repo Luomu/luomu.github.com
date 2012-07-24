@@ -1,0 +1,1405 @@
+V112 Dangerous magic number 0xffffffff used: a0 = (-a.v) & 0xffffffff;. fixed.h 68
+V112 Dangerous magic number 32 used: a1 = (-a.v) >> 32;. fixed.h 69
+V112 Dangerous magic number 0xffffffff used: a0 = a.v & 0xffffffff;. fixed.h 72
+V112 Dangerous magic number 32 used: a1 = a.v >> 32;. fixed.h 73
+V112 Dangerous magic number 0xffffffff used: b0 = (-b.v) & 0xffffffff;. fixed.h 76
+V112 Dangerous magic number 32 used: b1 = (-b.v) >> 32;. fixed.h 77
+V112 Dangerous magic number 0xffffffff used: b0 = b.v & 0xffffffff;. fixed.h 80
+V112 Dangerous magic number 32 used: b1 = b.v >> 32;. fixed.h 81
+V112 Dangerous magic number 32 used: lo += x<<32;. fixed.h 87
+V112 Dangerous magic number 32 used: hi += (x>>32);. fixed.h 90
+V112 Dangerous magic number 32 used: lo += x<<32;. fixed.h 94
+V112 Dangerous magic number 32 used: hi += x>>32;. fixed.h 97
+V112 Dangerous magic number 32 used: count = 32+(FRAC>>1)-1;. fixed.h 160
+V112 Dangerous magic number 4 used: = 4;. floatcomparison.h 277
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. matrix4x4.h 329
+V112 Dangerous magic number 0x80000000UL used: return (((u & 0x80000000UL) | (v & 0x7... mtrand.h 83
+V112 Dangerous magic number 0x7FFFFFFFUL used: ...0UL) | (v & 0x7FFFFFFFUL)) >> 1). mtrand.h 83
+V112 Dangerous magic number 0xffffffff used: ...EVENT_ALL = 0xffffffff;... guiwidget.h 58
+V110 Implicit type conversion of return value 'm_indices.size()' from memsize type to 32-bit type. surface.h 27
+V107 Implicit type conversion first argument 'm_verts.size()' of function 'DrawLines' to 32-bit type. drawables.h 39
+V108 Incorrect index type: m_states[not a memsize-type]. Use memsize type instead. guimultistateimagebutton.h 19
+V110 Implicit type conversion of return value 'm_children.size()' from memsize type to 32-bit type. guicontainer.h 21
+V112 Dangerous magic number 0x20 used: ...Character = 0x20;. texturefont.h 58
+V119 More than one sizeof() operator is used in one expression. stringf.h 230
+V119 More than one sizeof() operator is used in one expression. stringf.h 238
+V119 More than one sizeof() operator is used in one expression. stringf.h 247
+V119 More than one sizeof() operator is used in one expression. stringf.h 257
+V119 More than one sizeof() operator is used in one expression. stringf.h 268
+V119 More than one sizeof() operator is used in one expression. stringf.h 280
+V119 More than one sizeof() operator is used in one expression. stringf.h 293
+V106 Implicit type conversion second argument 'value' of function 'lua_pushinteger' to memsize type. luautils.h 11
+V106 Implicit type conversion second argument 'key' of function 'lua_pushinteger' to memsize type. luautils.h 17
+V106 Implicit type conversion second argument 'value' of function 'lua_pushinteger' to memsize type. luautils.h 18
+V106 Implicit type conversion second argument 'key' of function 'lua_pushinteger' to memsize type. luautils.h 31
+V106 Implicit type conversion second argument 'key' of function 'lua_pushinteger' to memsize type. luautils.h 38
+V103 Implicit type conversion from memsize to 32-bit type. starsystem.h 240
+V004 For a more precise verification, please select x64 or Itanium configuration instead of Win32.   1
+V108 Incorrect index type: m_triFlags[not a memsize-type]. Use memsize type instead. geomtree.h 34
+V106 Implicit type conversion first argument 'm_dirLen' of function 'substr' to memsize type. filesystem.h 75
+V106 Implicit type conversion second argument 'm_dirLen' of function 'substr' to memsize type. filesystem.h 76
+V110 Implicit type conversion of return value 'equip[s].size()' from memsize type to 32-bit type. equipset.h 22
+V108 Incorrect index type: equip[s][not a memsize-type]. Use memsize type instead. equipset.h 30
+V108 Incorrect index type: equip[s][not a memsize-type]. Use memsize type instead. equipset.h 36
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < equip[s].size() equipset.h 53
+V108 Incorrect index type: equip[s][not a memsize-type]. Use memsize type instead. equipset.h 54
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. equipset.h 72
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < equip[s].size() equipset.h 74
+V108 Incorrect index type: equip[s][not a memsize-type]. Use memsize type instead. equipset.h 75
+V108 Incorrect index type: equip[s][not a memsize-type]. Use memsize type instead. equipset.h 76
+V106 Implicit type conversion first argument 'numPoints' of function 'resize' to memsize type. beziercurve.h 18
+V103 Implicit type conversion from memsize to 32-bit type. beziercurve.h 22
+V108 Incorrect index type: p[not a memsize-type]. Use memsize type instead. beziercurve.h 27
+V103 Implicit type conversion from memsize to 32-bit type. beziercurve.h 32
+V108 Incorrect index type: out.p[not a memsize-type]. Use memsize type instead. beziercurve.h 35
+V108 Incorrect index type: p[not a memsize-type]. Use memsize type instead. beziercurve.h 35
+V107 Implicit type conversion first argument 'p.size()' of function 'Int32' to 32-bit type. beziercurve.h 40
+V106 Implicit type conversion first argument 'rd.Int32()' of function 'resize' to memsize type. beziercurve.h 44
+V108 Incorrect index type: m_thrusters[not a memsize-type]. Use memsize type instead. ship.h 69
+V108 Incorrect index type: m_angThrusters[not a memsize-type]. Use memsize type instead. ship.h 73
+V108 Incorrect index type: s_timeAccelRates[not a memsize-type]. Use memsize type instead. game.h 71
+V108 Incorrect index type: s_timeAccelRates[not a memsize-type]. Use memsize type instead. game.h 72
+V107 Implicit type conversion fourth argument 'nbytes' of function 'MultiByteToWideChar' to 32-bit type. textutils.h 11
+V107 Implicit type conversion sixth argument 'buf.size()' of function 'MultiByteToWideChar' to 32-bit type. textutils.h 11
+V106 Implicit type conversion first argument 'reqchars' of function 'resize' to memsize type. textutils.h 13
+V107 Implicit type conversion fourth argument 'nchars' of function 'WideCharToMultiByte' to 32-bit type. textutils.h 25
+V107 Implicit type conversion sixth argument 'buf.size()' of function 'WideCharToMultiByte' to 32-bit type. textutils.h 25
+V106 Implicit type conversion first argument 'reqbytes' of function 'resize' to memsize type. textutils.h 27
+V106 Implicit type conversion second argument 'len' of function 'transcode_utf16_to_utf8' to memsize type. filesystemwin32.cpp 40
+V112 Dangerous magic number 0x7FFFFFFFull used: if (size > 0x7FFFFFFFull) {. filesystemwin32.cpp 152
+V104 Implicit conversion of 'read_size' to memsize type in an arithmetic expression: data + read_size filesystemwin32.cpp 167
+V104 Implicit conversion of 'read_size' to memsize type in an arithmetic expression: size - read_size filesystemwin32.cpp 167
+V106 Implicit type conversion first argument 'idx' of function 'at' to memsize type. staticmesh.h 26
+V108 Incorrect index type: StarSystem::starRealColors[not a memsize-type]. Use memsize type instead. camera.cpp 65
+V112 Dangerous magic number 4 used: lights.reserve(4);. camera.cpp 131
+V107 Implicit type conversion first argument 'lights.size()' of function 'SetLights' to 32-bit type. camera.cpp 169
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. cargobody.cpp 28
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. cargobody.cpp 62
+V112 Dangerous magic number 32 used: ...upTable[i], 32);. crc32.cpp 26
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. commoditytradewidget.cpp 100
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. commoditytradewidget.cpp 101
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. commoditytradewidget.cpp 102
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. commoditytradewidget.cpp 115
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. commoditytradewidget.cpp 120
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. commoditytradewidget.cpp 154
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. commoditytradewidget.cpp 157
+V108 Incorrect index type: buildings->buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 63
+V112 Dangerous magic number 4 used: ...rand.Int32(4);. cityonplanet.cpp 101
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_buildings.size() cityonplanet.cpp 123
+V108 Incorrect index type: m_buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 125
+V108 Incorrect index type: m_buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 127
+V108 Incorrect index type: m_buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 128
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_buildings.size() cityonplanet.cpp 136
+V108 Incorrect index type: m_buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 137
+V108 Incorrect index type: m_buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 138
+V103 Implicit type conversion from memsize to 32-bit type. cityonplanet.cpp 149
+V108 Incorrect index type: list->buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 153
+V108 Incorrect index type: list->buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 155
+V108 Incorrect index type: list->buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 158
+V119 More than one sizeof() operator is used in one expression. cityonplanet.cpp 168
+V119 More than one sizeof() operator is used in one expression. cityonplanet.cpp 176
+V108 Incorrect index type: s_buildingLists[list].buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 178
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_buildings.size() cityonplanet.cpp 187
+V108 Incorrect index type: m_buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 188
+V108 Incorrect index type: m_buildings[not a memsize-type]. Use memsize type instead. cityonplanet.cpp 189
+V119 More than one sizeof() operator is used in one expression. cityonplanet.cpp 203
+V119 More than one sizeof() operator is used in one expression. cityonplanet.cpp 233
+V112 Dangerous magic number 4 used: ...ide=0; side<4; side++) {. cityonplanet.cpp 241
+V112 Dangerous magic number 4 used: ...(int i=1; i<4; i++) {. cityonplanet.cpp 288
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < fragments.size() - 1 filesourcezip.cpp 81
+V108 Incorrect index type: fragments[not a memsize-type]. Use memsize type instead. filesourcezip.cpp 82
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < fragments.size() - 1 filesourcezip.cpp 164
+V108 Incorrect index type: fragments[not a memsize-type]. Use memsize type instead. filesourcezip.cpp 165
+V108 Incorrect index type: fragments[not a memsize-type]. Use memsize type instead. filesourcezip.cpp 167
+V108 Incorrect index type: fragments[not a memsize-type]. Use memsize type instead. filesourcezip.cpp 169
+V108 Incorrect index type: fragments[not a memsize-type]. Use memsize type instead. filesourcezip.cpp 170
+V103 Implicit type conversion from memsize to 32-bit type. facevideolink.cpp 55
+V103 Implicit type conversion from memsize to 32-bit type. filesystem.cpp 120
+V107 Implicit type conversion first argument 'f->m_children.size()' of function 'Int32' to 32-bit type. frame.cpp 34
+V112 Dangerous magic number 4 used: ...DrawLines2D(4, vts, white... galacticview.cpp 125
+V107 Implicit type conversion first argument 'm_hyperspaceClouds.size()' of function 'Int32' to 32-bit type. game.cpp 182
+V108 Incorrect index type: modes[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 257
+V108 Incorrect index type: modes[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 264
+V108 Incorrect index type: modes[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 266
+V108 Incorrect index type: KeyBindings::bindingProtos[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 401
+V108 Incorrect index type: KeyBindings::bindingProtos[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 402
+V108 Incorrect index type: KeyBindings::bindingProtos[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 403
+V108 Incorrect index type: KeyBindings::axisBindingProtos[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 421
+V108 Incorrect index type: KeyBindings::axisBindingProtos[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 423
+V108 Incorrect index type: KeyBindings::axisBindingProtos[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 424
+V108 Incorrect index type: modes[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 565
+V108 Incorrect index type: modes[not a memsize-type]. Use memsize type instead. gamemenuview.cpp 566
+V112 Dangerous magic number 4 used: ...ed char col[4];. geosphere.cpp 52
+V112 Dangerous magic number 4 used: ...t { return (4*3*(edgeLen-... geosphere.cpp 67
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i * sizeof (unsigned short) geosphere.cpp 70
+V104 Implicit conversion of '(edgeLen / 2)' to memsize type in an arithmetic expression. geosphere.cpp 70
+V110 Implicit type conversion of return value from memsize type to 32-bit type. geosphere.cpp 70
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i * sizeof (unsigned short) geosphere.cpp 71
+V104 Implicit conversion of 'VBO_COUNT_HI_EDGE()' to memsize type in an arithmetic expression. geosphere.cpp 71
+V112 Dangerous magic number 4 used: ...O_LO_OFFSET(4); }. geosphere.cpp 71
+V104 Implicit conversion of 'IDX_VBO_LO_OFFSET(4)' to memsize type in an arithmetic expression. geosphere.cpp 71
+V110 Implicit type conversion of return value from memsize type to 32-bit type. geosphere.cpp 71
+V112 Dangerous magic number 4 used: ...O_HI_OFFSET(4); }. geosphere.cpp 72
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 99
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geosphere.cpp 112
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geosphere.cpp 115
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 116
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geosphere.cpp 117
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geosphere.cpp 118
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 258
+V108 Incorrect index type: loEdgeIndices[i][not a memsize-type]. Use memsize type instead. geosphere.cpp 262
+V108 Incorrect index type: loEdgeIndices[i][not a memsize-type]. Use memsize type instead. geosphere.cpp 263
+V108 Incorrect index type: hiEdgeIndices[i][not a memsize-type]. Use memsize type instead. geosphere.cpp 266
+V108 Incorrect index type: hiEdgeIndices[i][not a memsize-type]. Use memsize type instead. geosphere.cpp 267
+V104 Implicit conversion of 'VBO_COUNT_MID_IDX()' to memsize type in an arithmetic expression. geosphere.cpp 274
+V104 Implicit conversion of 'IDX_VBO_MAIN_OFFSET()' to memsize type in an arithmetic expression. geosphere.cpp 274
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 275
+V104 Implicit conversion of '(edgeLen / 2)' to memsize type in an arithmetic expression. geosphere.cpp 278
+V106 Implicit type conversion second argument 'IDX_VBO_LO_OFFSET(i)' of function '__glewBufferSubDataARB' to memsize type. geosphere.cpp 276
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 281
+V104 Implicit conversion of 'VBO_COUNT_HI_EDGE()' to memsize type in an arithmetic expression. geosphere.cpp 284
+V106 Implicit type conversion second argument 'IDX_VBO_HI_OFFSET(i)' of function '__glewBufferSubDataARB' to memsize type. geosphere.cpp 282
+V104 Implicit conversion of 'VBO_COUNT_MID_IDX()' to memsize type in an arithmetic expression. geosphere.cpp 289
+V106 Implicit type conversion second argument 'IDX_VBO_MAIN_OFFSET()' of function '__glewBufferSubDataARB' to memsize type. geosphere.cpp 287
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 296
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. geosphere.cpp 296
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 299
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. geosphere.cpp 299
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 302
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. geosphere.cpp 302
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 304
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. geosphere.cpp 304
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. geosphere.cpp 310
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 310
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. geosphere.cpp 313
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 313
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. geosphere.cpp 316
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 316
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. geosphere.cpp 318
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 318
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 357
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geosphere.cpp 367
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geosphere.cpp 368
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geosphere.cpp 369
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 374
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) if (k... geosphere.cpp 377
+V104 Implicit conversion of 'ctx->NUMVERTICES()' to memsize type in an arithmetic expression: sizeof (VBOVertex) * ctx->NUMVERTICES() geosphere.cpp 393
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 396
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 398
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 399
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 400
+V108 Incorrect index type: normals[not a memsize-type]. Use memsize type instead. geosphere.cpp 401
+V108 Incorrect index type: normals[not a memsize-type]. Use memsize type instead. geosphere.cpp 402
+V108 Incorrect index type: normals[not a memsize-type]. Use memsize type instead. geosphere.cpp 403
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 404
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 405
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 406
+V104 Implicit conversion of 'ctx->NUMVERTICES()' to memsize type in an arithmetic expression: sizeof (VBOVertex) * ctx->NUMVERTICES() geosphere.cpp 409
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 430
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 443
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 444
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 445
+V108 Incorrect index type: normals[not a memsize-type]. Use memsize type instead. geosphere.cpp 448
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 451
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 452
+V108 Incorrect index type: ev[not a memsize-type]. Use memsize type instead. geosphere.cpp 459
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 505
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 572
+V108 Incorrect index type: normals[not a memsize-type]. Use memsize type instead. geosphere.cpp 577
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 582
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 682
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) if(!d... geosphere.cpp 704
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 767
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 772
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 780
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 782
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 790
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 792
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. geosphere.cpp 800
+V108 Incorrect index type: colors[not a memsize-type]. Use memsize type instead. geosphere.cpp 802
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) kids[... geosphere.cpp 871
+V112 Dangerous magic number 4 used: glColorPointer(4, GL_UNSIGNE... geosphere.cpp 892
+V204 Explicit conversion from 32-bit integer type to pointer type. geosphere.cpp 894
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 895
+V204 Explicit conversion from 32-bit integer type to pointer type. geosphere.cpp 897
+V204 Explicit conversion from 32-bit integer type to pointer type. geosphere.cpp 899
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 923
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) _kids... geosphere.cpp 971
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) kids[... geosphere.cpp 973
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) edgeF... geosphere.cpp 974
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. geosphere.cpp 975
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) kids[... geosphere.cpp 981
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) { del... geosphere.cpp 985
+V112 Dangerous magic number 4 used: ...l.planets > 4 ? 4 : Pi::d... geosphere.cpp 1077
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) delet... geosphere.cpp 1101
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) delet... geosphere.cpp 1103
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) delet... geosphere.cpp 1104
+V112 Dangerous magic number 4 used: ...l.planets > 4 ? 4 : Pi::d... geosphere.cpp 1119
+V112 Dangerous magic number 4 used: ...(int j=0; j<4; j++) {. geosphere.cpp 1260
+V108 Incorrect index type: StarSystem::starRealColors[not a memsize-type]. Use memsize type instead. geosphere.cpp 1446
+V108 Incorrect index type: StarSystem::starRealColors[not a memsize-type]. Use memsize type instead. geosphere.cpp 1447
+V108 Incorrect index type: StarSystem::starRealColors[not a memsize-type]. Use memsize type instead. geosphere.cpp 1448
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. infoview.cpp 158
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. infoview.cpp 165
+V108 Incorrect index type: Pi::combatRating[not a memsize-type]. Use memsize type instead. infoview.cpp 199
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. infoview.cpp 254
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. infoview.cpp 267
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. infoview.cpp 274
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. infoview.cpp 287
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. infoview.cpp 291
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. infoview.cpp 305
+V112 Dangerous magic number 4 used: ...(p, "Axis", 4) != 0). keybindings.cpp 333
+V112 Dangerous magic number 4 used: p += 4;. keybindings.cpp 336
+V108 Incorrect index type: bindingProtos[not a memsize-type]. Use memsize type instead. keybindings.cpp 377
+V108 Incorrect index type: bindingProtos[not a memsize-type]. Use memsize type instead. keybindings.cpp 378
+V102 Usage of non memsize type for pointer arithmetic. lang.cpp 70
+V112 Dangerous magic number 4 used: ...me.size() - 4));. lang.cpp 208
+V111 Call of function 'fprintf' with variable number of arguments. Third argument has memsize type. lang.cpp 257
+V111 Call of function 'fprintf' with variable number of arguments. Third argument has memsize type. lang.cpp 300
+V103 Implicit type conversion from memsize to 32-bit type. bufferobject.h 40
+V108 Incorrect index type: idxData[not a memsize-type]. Use memsize type instead. bufferobject.h 42
+V108 Incorrect index type: m_bos[not a memsize-type]. Use memsize type instead. bufferobject.h 84
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_bos.size() bufferobject.h 92
+V108 Incorrect index type: m_bos[not a memsize-type]. Use memsize type instead. bufferobject.h 93
+V108 Incorrect index type: m_bos[not a memsize-type]. Use memsize type instead. bufferobject.h 94
+V112 Dangerous magic number 4 used: ...nt i=0; i < 4; i++) {. lmrmodel.cpp 93
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 307
+V106 Implicit type conversion third argument 'len' of function 'fwrite' to memsize type. lmrmodel.cpp 309
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. lmrmodel.cpp 326
+V106 Implicit type conversion third argument 'len' of function 'fread_or_die' to memsize type. lmrmodel.cpp 327
+V110 Implicit type conversion of return value 'm_indices.size()' from memsize type to 32-bit type. lmrmodel.cpp 347
+V110 Implicit type conversion of return value 'm_vertices.size()' from memsize type to 32-bit type. lmrmodel.cpp 350
+V107 Implicit type conversion first argument 'm_vertices.size()' of function 'AddGeometry' to 32-bit type. lmrmodel.cpp 366
+V107 Implicit type conversion third argument 'm_indices.size()' of function 'AddGeometry' to 32-bit type. lmrmodel.cpp 366
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 382
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 390
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 392
+V104 Implicit conversion of '(op.elems.start + m_boIndexBase)' to memsize type in an arithmetic expression. lmrmodel.cpp 415
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 423
+V106 Implicit type conversion first argument 'op.billboards.count' of function 'reserve' to memsize type. lmrmodel.cpp 441
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 443
+V108 Incorrect index type: m_model->m_materials[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 457
+V112 Dangerous magic number 4 used: for (int j=4; j<8; j++) {. lmrmodel.cpp 501
+V112 Dangerous magic number 4 used: for (int j=4; j<8; j++)... lmrmodel.cpp 514
+V104 Implicit conversion of 'unsigned (op.light.num)' to memsize type in an arithmetic expression. lmrmodel.cpp 520
+V106 Implicit type conversion first argument 'op.light.num + 1' of function 'resize' to memsize type. lmrmodel.cpp 521
+V108 Incorrect index type: m_model->m_lights[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 523
+V112 Dangerous magic number 4 used: ...GL_LIGHT0 + 4 + activeLig... lmrmodel.cpp 524
+V112 Dangerous magic number 4 used: ...GL_LIGHT0 + 4 + activeLig... lmrmodel.cpp 525
+V112 Dangerous magic number 4 used: ...GL_LIGHT0 + 4 + activeLig... lmrmodel.cpp 526
+V112 Dangerous magic number 4 used: ...GL_LIGHT0 + 4 + activeLig... lmrmodel.cpp 527
+V112 Dangerous magic number 4 used: ...GL_LIGHT0 + 4 + activeLig... lmrmodel.cpp 528
+V112 Dangerous magic number 4 used: ...iveLights > 4) {. lmrmodel.cpp 530
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. lmrmodel.cpp 531
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_thrusters.size() lmrmodel.cpp 560
+V108 Incorrect index type: m_thrusters[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 561
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 572
+V106 Implicit type conversion first argument 'i + 1' of function 'resize' to memsize type. lmrmodel.cpp 573
+V108 Incorrect index type: m_thrusters[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 574
+V108 Incorrect index type: m_thrusters[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 575
+V108 Incorrect index type: m_thrusters[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 576
+V108 Incorrect index type: m_thrusters[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 577
+V110 Implicit type conversion of return value 'm_vertices.size() - 1' from memsize type to 32-bit type. lmrmodel.cpp 593
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 597
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 599
+V104 Implicit conversion of 'unsigned (num)' to memsize type in an arithmetic expression. lmrmodel.cpp 654
+V106 Implicit type conversion first argument 'num + 1' of function 'resize' to memsize type. lmrmodel.cpp 655
+V108 Incorrect index type: m_model->m_lights[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 657
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 694
+V108 Incorrect index type: points[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 705
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. lmrmodel.cpp 726
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 744
+V106 Implicit type conversion first argument 'start + num' of function 'resize' to memsize type. lmrmodel.cpp 745
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 750
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 757
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 758
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 759
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 761
+V104 Implicit conversion of 'c->nv' to memsize type in an arithmetic expression: 3 * sizeof (float) * c->nv lmrmodel.cpp 764
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_vertices.size() lmrmodel.cpp 766
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 767
+V108 Incorrect index type: c->pVertex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 768
+V108 Incorrect index type: c->pVertex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 769
+V108 Incorrect index type: c->pVertex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 770
+V104 Implicit conversion of 'c->ni' to memsize type in an arithmetic expression: sizeof (int) * c->ni lmrmodel.cpp 775
+V104 Implicit conversion of 'c->nf' to memsize type in an arithmetic expression: sizeof (unsigned int) * c->nf lmrmodel.cpp 776
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_indices.size() lmrmodel.cpp 777
+V108 Incorrect index type: c->pIndex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 778
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 778
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_triflags.size() lmrmodel.cpp 780
+V108 Incorrect index type: c->pFlag[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 781
+V108 Incorrect index type: m_triflags[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 781
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 786
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 788
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 820
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 875
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 876
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 877
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 878
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 879
+V106 Implicit type conversion third argument 'numVertices' of function 'fwrite' to memsize type. lmrmodel.cpp 886
+V106 Implicit type conversion third argument 'numIndices' of function 'fwrite' to memsize type. lmrmodel.cpp 887
+V106 Implicit type conversion third argument 'numTriflags' of function 'fwrite' to memsize type. lmrmodel.cpp 888
+V106 Implicit type conversion third argument 'numThrusters' of function 'fwrite' to memsize type. lmrmodel.cpp 889
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 892
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 893
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 894
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 896
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 897
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 898
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 899
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 901
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 902
+V106 Implicit type conversion first argument 'numVertices' of function 'resize' to memsize type. lmrmodel.cpp 920
+V106 Implicit type conversion third argument 'numVertices' of function 'fread_or_die' to memsize type. lmrmodel.cpp 921
+V106 Implicit type conversion first argument 'numIndices' of function 'resize' to memsize type. lmrmodel.cpp 924
+V106 Implicit type conversion third argument 'numIndices' of function 'fread_or_die' to memsize type. lmrmodel.cpp 925
+V106 Implicit type conversion first argument 'numTriflags' of function 'resize' to memsize type. lmrmodel.cpp 928
+V106 Implicit type conversion third argument 'numTriflags' of function 'fread_or_die' to memsize type. lmrmodel.cpp 929
+V106 Implicit type conversion first argument 'numThrusters' of function 'resize' to memsize type. lmrmodel.cpp 932
+V106 Implicit type conversion third argument 'numThrusters' of function 'fread_or_die' to memsize type. lmrmodel.cpp 933
+V106 Implicit type conversion first argument 'numOps' of function 'resize' to memsize type. lmrmodel.cpp 935
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 937
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 938
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 939
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 941
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 942
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 943
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 945
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 946
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 947
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 950
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 951
+V108 Incorrect index type: m_ops[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 952
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. lmrmodel.cpp 975
+V106 Implicit type conversion second argument 'i' of function 'lua_pushinteger' to memsize type. lmrmodel.cpp 981
+V106 Implicit type conversion second argument 'i' of function 'lua_pushinteger' to memsize type. lmrmodel.cpp 1006
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1011
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. lmrmodel.cpp 1029
+V106 Implicit type conversion third argument 'numMaterials' of function 'fread_or_die' to memsize type. lmrmodel.cpp 1063
+V106 Implicit type conversion third argument 'numLights' of function 'fread_or_die' to memsize type. lmrmodel.cpp 1071
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1096
+V106 Implicit type conversion third argument 'numMaterials' of function 'fwrite' to memsize type. lmrmodel.cpp 1098
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1099
+V106 Implicit type conversion third argument 'numLights' of function 'fwrite' to memsize type. lmrmodel.cpp 1101
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1145
+V106 Implicit type conversion second argument 'j' of function 'lua_pushinteger' to memsize type. lmrmodel.cpp 1193
+V108 Incorrect index type: pFlag[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1306
+V108 Incorrect index type: pIndex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1307
+V108 Incorrect index type: pVertex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1307
+V108 Incorrect index type: pIndex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1308
+V108 Incorrect index type: pVertex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1308
+V108 Incorrect index type: pIndex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1309
+V108 Incorrect index type: pVertex[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1309
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. lmrmodel.cpp 1372
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 1376
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1424
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 1430
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1461
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1554
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 1557
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1563
+V112 Dangerous magic number 4 used: if (num < 4) luaL_error... lmrmodel.cpp 1565
+V104 Implicit conversion of 'num * 2' to memsize type in an arithmetic expression: num * 2 * sizeof (float) lmrmodel.cpp 1568
+V106 Implicit type conversion second argument 'i' of function 'lua_pushinteger' to memsize type. lmrmodel.cpp 1571
+V108 Incorrect index type: jizz[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1573
+V108 Incorrect index type: jizz[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1586
+V108 Incorrect index type: jizz[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1587
+V108 Incorrect index type: jizz[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1588
+V108 Incorrect index type: jizz[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1589
+V108 Incorrect index type: jizz[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 1590
+V112 Dangerous magic number 4 used: ...cknumber(L, 4);. lmrmodel.cpp 1651
+V112 Dangerous magic number 4 used: ...a_gettop(L)-4;. lmrmodel.cpp 1654
+V112 Dangerous magic number 4 used: ...2*steps + i*4;. lmrmodel.cpp 1697
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. lmrmodel.cpp 1717
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1735
+V112 Dangerous magic number 4 used: ...(int i=1; i<4; i++) {. lmrmodel.cpp 1761
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 1923
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2101
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2102
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. lmrmodel.cpp 2210
+V112 Dangerous magic number 4 used: ...(int j=0; j<4; j++) {. lmrmodel.cpp 2211
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2221
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2222
+V112 Dangerous magic number 4 used: if (nargs == 4) {. lmrmodel.cpp 2465
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 2469
+V108 Incorrect index type: vals[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 2525
+V108 Incorrect index type: vals[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 2530
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 2573
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2686
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2747
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 2750
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2775
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 2778
+V112 Dangerous magic number 4 used: ...(vtxStart+i+4*steps, star... lmrmodel.cpp 2810
+V112 Dangerous magic number 4 used: ...1, vtxStart+4*steps-1, vt... lmrmodel.cpp 2825
+V112 Dangerous magic number 4 used: ...s, vtxStart+4*steps-1, vt... lmrmodel.cpp 2826
+V112 Dangerous magic number 4 used: ...ri(vtxStart+4*steps+i, vt... lmrmodel.cpp 2830
+V112 Dangerous magic number 4 used: ...ri(vtxStart+4*steps+i+1,... lmrmodel.cpp 2832
+V112 Dangerous magic number 4 used: ...1, vtxStart+4*steps);. lmrmodel.cpp 2839
+V112 Dangerous magic number 4 used: ...ri(vtxStart+4*steps, vtxS... lmrmodel.cpp 2840
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2877
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 2880
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2906
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 2909
+V112 Dangerous magic number 4 used: ...locVertices(4*steps);. lmrmodel.cpp 2921
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 2990
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 2993
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 3018
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 3021
+V112 Dangerous magic number 4 used: ...locVertices(4*steps);. lmrmodel.cpp 3033
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 3098
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 3101
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 3125
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 3128
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 3196
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 3199
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 3222
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 3225
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 3381
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. lmrmodel.cpp 3413
+V112 Dangerous magic number 4 used: ...sboolean(L, 4)) {. lmrmodel.cpp 3469
+V112 Dangerous magic number 4 used: ...oboolean(L, 4) != 0;. lmrmodel.cpp 3470
+V112 Dangerous magic number 4 used: ...sboolean(L, 4)) {. lmrmodel.cpp 3497
+V112 Dangerous magic number 4 used: ...oboolean(L, 4) != 0;. lmrmodel.cpp 3498
+V112 Dangerous magic number 4 used: return 4;. lmrmodel.cpp 3557
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. lmrmodel.cpp 3569
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 3619
+V106 Implicit type conversion second argument 's_curParams->animStages[anim]' of function 'lua_pushinteger' to memsize type. lmrmodel.cpp 3681
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 3834
+V119 More than one sizeof() operator is used in one expression. lmrmodel.cpp 3835
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. lmrmodel.cpp 3841
+V112 Dangerous magic number 4 used: ..._istable(L, 4)) {. lmrmodel.cpp 3900
+V106 Implicit type conversion second argument 'i' of function 'lua_pushinteger' to memsize type. lmrmodel.cpp 3902
+V112 Dangerous magic number 4 used: ...gettable(L, 4);. lmrmodel.cpp 3903
+V107 Implicit type conversion fourth argument 'points.size()' of function 'PushBillboards' to 32-bit type. lmrmodel.cpp 3912
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 3992
+V112 Dangerous magic number 4 used: ...(subdivs > 4)) {. lmrmodel.cpp 3993
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 4053
+V103 Implicit type conversion from memsize to 32-bit type. lmrmodel.cpp 4054
+V112 Dangerous magic number 4 used: ...cknumber(l, 4);. lmrmodel.cpp 4056
+V104 Implicit conversion of '(LONG_SEGS + 1)' to memsize type in an arithmetic expression: sizeof (float) * (LONG_SEGS + 1) lmrmodel.cpp 4064
+V104 Implicit conversion of '(LONG_SEGS + 1)' to memsize type in an arithmetic expression: sizeof (float) * (LONG_SEGS + 1) lmrmodel.cpp 4065
+V108 Incorrect index type: sinTable[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4067
+V108 Incorrect index type: cosTable[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4068
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. lmrmodel.cpp 4071
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. lmrmodel.cpp 4072
+V108 Incorrect index type: sinTable[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4078
+V108 Incorrect index type: cosTable[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4078
+V108 Incorrect index type: idx[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4079
+V108 Incorrect index type: idx2[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4080
+V108 Incorrect index type: idx[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4083
+V108 Incorrect index type: sinTable[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4090
+V108 Incorrect index type: cosTable[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4090
+V108 Incorrect index type: idx[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4091
+V108 Incorrect index type: idx2[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4091
+V108 Incorrect index type: idx2[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4092
+V108 Incorrect index type: idx[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4095
+V108 Incorrect index type: idx2[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4095
+V108 Incorrect index type: idx[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4096
+V108 Incorrect index type: idx2[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4096
+V108 Incorrect index type: sinTable[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4102
+V108 Incorrect index type: cosTable[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4102
+V108 Incorrect index type: idx[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4103
+V108 Incorrect index type: idx[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4106
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. lmrmodel.cpp 4217
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4292
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4293
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4294
+V108 Incorrect index type: texcoords[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4303
+V108 Incorrect index type: texcoords[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4304
+V108 Incorrect index type: texcoords[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4305
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4319
+V108 Incorrect index type: normals[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4319
+V108 Incorrect index type: vertices[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4321
+V108 Incorrect index type: normals[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4321
+V108 Incorrect index type: texcoords[not a memsize-type]. Use memsize type instead. lmrmodel.cpp 4321
+V112 Dangerous magic number 4 used: ...(numBits == 4) {. lmrmodel.cpp 4331
+V107 Implicit type conversion second argument 'data->GetSize()' of function 'AddData' to 32-bit type. lmrmodel.cpp 4456
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) {. lmrmodel.cpp 4606
+V106 Implicit type conversion second argument 'sbody->seed' of function 'lua_pushinteger' to memsize type. luabody.cpp 65
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 28
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 36
+V106 Implicit type conversion second argument 'option' of function 'lua_pushinteger' to memsize type. luachatform.cpp 37
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 57
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 73
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 79
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 87
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 103
+V112 Dangerous magic number 4 used: lua_insert(l, -4);. luachatform.cpp 113
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 132
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 151
+V103 Implicit type conversion from memsize to 32-bit type. luachatform.cpp 155
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 170
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 189
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. luachatform.cpp 200
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 213
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. luachatform.cpp 224
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 237
+V106 Implicit type conversion second argument 'GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 251
+V103 Implicit type conversion from memsize to 32-bit type. luachatform.cpp 437
+V103 Implicit type conversion from memsize to 32-bit type. luachatform.cpp 523
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luachatform.cpp 560
+V111 Call of function 'luaL_error' with variable number of arguments. Fourth argument has memsize type. luachatform.cpp 560
+V111 Call of function 'luaL_error' with variable number of arguments. Fifth argument has memsize type. luachatform.cpp 560
+V106 Implicit type conversion second argument 'form->GetAdvert()->ref' of function 'lua_pushinteger' to memsize type. luachatform.cpp 654
+V111 Call of function 'lua_pushfstring' with variable number of arguments. Fourth argument has memsize type. luaconstants.cpp 34
+V111 Call of function 'luaL_error' with variable number of arguments. Fourth argument has memsize type. luaconstants.cpp 37
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaconstants.cpp 61
+V111 Call of function 'luaL_error' with variable number of arguments. Fourth argument has memsize type. luaconstants.cpp 61
+V103 Implicit type conversion from memsize to 32-bit type. luaconstants.cpp 65
+V106 Implicit type conversion second argument 'value' of function 'lua_pushinteger' to memsize type. luaconstants.cpp 89
+V111 Call of function 'luaL_error' with variable number of arguments. Fourth argument has memsize type. luaconstants.cpp 92
+V112 Dangerous magic number 4 used: lua_rawset(l, -4);. luaconstants.cpp 123
+V112 Dangerous magic number 4 used: lua_rawset(l, -4);. luaconstants.cpp 139
+V112 Dangerous magic number 4 used: lua_pop(l, 4);. luaconstants.cpp 154
+V106 Implicit type conversion first argument 'displayedOutputLines' of function 'reserve' to memsize type. luaconsole.cpp 29
+V103 Implicit type conversion from memsize to 32-bit type. luaconsole.cpp 57
+V108 Incorrect index type: m_statementHistory[not a memsize-type]. Use memsize type instead. luaconsole.cpp 60
+V108 Incorrect index type: m_statementHistory[not a memsize-type]. Use memsize type instead. luaconsole.cpp 73
+V108 Incorrect index type: m_statementHistory[not a memsize-type]. Use memsize type instead. luaconsole.cpp 79
+V103 Implicit type conversion from memsize to 32-bit type. luaconsole.cpp 101
+V104 Implicit conversion of 'm_currentCompletion' to memsize type in an arithmetic expression. luaconsole.cpp 105
+V108 Incorrect index type: m_completionList[not a memsize-type]. Use memsize type instead. luaconsole.cpp 108
+V103 Implicit type conversion from memsize to 32-bit type. luaconsole.cpp 230
+V108 Incorrect index type: m_outputLines[not a memsize-type]. Use memsize type instead. luaconsole.cpp 241
+V106 Implicit type conversion second argument 'et->mass' of function 'lua_pushinteger' to memsize type. luaequiptype.cpp 92
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. luaequiptype.cpp 122
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaequiptype.cpp 199
+V103 Implicit type conversion from memsize to 32-bit type. luafixed.cpp 8
+V103 Implicit type conversion from memsize to 32-bit type. luafixed.cpp 9
+V104 Implicit conversion of 'b' to memsize type in an arithmetic expression: (size_t (kb) * 1024) + b luamanager.cpp 29
+V107 Implicit type conversion third argument 'tokens.size()' of function 'lua_createtable' to 32-bit type. lualang.cpp 18
+V107 Implicit type conversion second argument 'langs.size()' of function 'lua_createtable' to 32-bit type. lualang.cpp 85
+V112 Dangerous magic number 4 used: ...se if (n == 4) {. luamatrix.cpp 17
+V112 Dangerous magic number 4 used: ...FromLuaF(L, 4);. luamatrix.cpp 21
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaobject.cpp 166
+V111 Call of function 'lua_pushfstring' with variable number of arguments. Third argument has memsize type. luaobject.cpp 188
+V111 Call of function 'lua_pushfstring' with variable number of arguments. Fourth argument has memsize type. luaobject.cpp 188
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaobject.cpp 270
+V112 Dangerous magic number 4 used: ...ettable(l, -4);. luaobject.cpp 499
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaobject.cpp 555
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaobject.cpp 561
+V111 Call of function 'luaL_error' with variable number of arguments. Fourth argument has memsize type. luaobject.cpp 561
+V103 Implicit type conversion from memsize to 32-bit type. luarand.cpp 37
+V103 Implicit type conversion from memsize to 32-bit type. luarand.cpp 131
+V103 Implicit type conversion from memsize to 32-bit type. luarand.cpp 132
+V103 Implicit type conversion from memsize to 32-bit type. luarand.cpp 136
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luaplayer.cpp 167
+V103 Implicit type conversion from memsize to 32-bit type. luaplayer.cpp 199
+V103 Implicit type conversion from memsize to 32-bit type. luaplayer.cpp 244
+V103 Implicit type conversion from memsize to 32-bit type. luaplayer.cpp 280
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaserializer.cpp 86
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaserializer.cpp 90
+V111 Call of function '_snprintf' with variable number of arguments. Fourth argument has memsize type. luaserializer.cpp 128
+V112 Dangerous magic number 4 used: lua_rawset(l, -4);... luaserializer.cpp 153
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. luaserializer.cpp 185
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. luaserializer.cpp 204
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. luaserializer.cpp 209
+V111 Call of function 'Error' with variable number of arguments. Third argument has memsize type. luaserializer.cpp 209
+V106 Implicit type conversion third argument 'len' of function 'lua_pushlstring' to memsize type. luaserializer.cpp 246
+V104 Implicit conversion of 'len' to memsize type in an arithmetic expression: end + len luaserializer.cpp 247
+V103 Implicit type conversion from memsize to 32-bit type. luaserializer.cpp 289
+V112 Dangerous magic number 4 used: if (len == 4 && strncmp(... luaserializer.cpp 321
+V103 Implicit type conversion from memsize to 32-bit type. luaserializer.cpp 363
+V106 Implicit type conversion third argument 'len' of function 'lua_pushlstring' to memsize type. luaserializer.cpp 373
+V106 Implicit type conversion third argument 'len' of function 'lua_pushlstring' to memsize type. luaserializer.cpp 384
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaserializer.cpp 385
+V112 Dangerous magic number 4 used: ...hecktype(l, 4, LUA_TFUNCT... luaserializer.cpp 504
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaserializer.cpp 516
+V112 Dangerous magic number 4 used: ...ushvalue(l, 4);. luaserializer.cpp 525
+V112 Dangerous magic number 4 used: lua_rawset(l, -4);. luaserializer.cpp 530
+V106 Implicit type conversion second argument 'st->capacity' of function 'lua_pushinteger' to memsize type. luashiptype.cpp 71
+V106 Implicit type conversion second argument 'st->hullMass' of function 'lua_pushinteger' to memsize type. luashiptype.cpp 93
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luashiptype.cpp 235
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luashiptype.cpp 314
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaship.cpp 160
+V111 Call of function 'pi_lua_warn' with variable number of arguments. Third argument has memsize type. luaship.cpp 214
+V111 Call of function 'pi_lua_warn' with variable number of arguments. Third argument has memsize type. luaship.cpp 261
+V112 Dangerous magic number 4 used: ...cknumber(l, 4);. luaship.cpp 357
+V106 Implicit type conversion second argument 's->m_equipment.GetSlotSize(slot)' of function 'lua_pushinteger' to memsize type. luaship.cpp 501
+V103 Implicit type conversion from memsize to 32-bit type. luaship.cpp 548
+V111 Call of function 'pi_lua_warn' with variable number of arguments. Third argument has memsize type. luaship.cpp 550
+V111 Call of function 'pi_lua_warn' with variable number of arguments. Fourth argument has memsize type. luaship.cpp 550
+V106 Implicit type conversion second argument 'idx + 1' of function 'lua_pushinteger' to memsize type. luaship.cpp 563
+V103 Implicit type conversion from memsize to 32-bit type. luaship.cpp 605
+V112 Dangerous magic number 4 used: ...ckstring(l, 4);. luaship.cpp 606
+V111 Call of function 'pi_lua_warn' with variable number of arguments. Third argument has memsize type. luaship.cpp 612
+V111 Call of function 'pi_lua_warn' with variable number of arguments. Fourth argument has memsize type. luaship.cpp 612
+V111 Call of function 'pi_lua_warn' with variable number of arguments. Sixth argument has memsize type. luaship.cpp 612
+V103 Implicit type conversion from memsize to 32-bit type. luaship.cpp 658
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. luaship.cpp 663
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. luaship.cpp 664
+V106 Implicit type conversion second argument 's->m_equipment.Add(e, num)' of function 'lua_pushinteger' to memsize type. luaship.cpp 666
+V103 Implicit type conversion from memsize to 32-bit type. luaship.cpp 705
+V106 Implicit type conversion second argument 's->m_equipment.Remove(e, num)' of function 'lua_pushinteger' to memsize type. luaship.cpp 709
+V106 Implicit type conversion second argument 's->m_equipment.Count(slot, e)' of function 'lua_pushinteger' to memsize type. luaship.cpp 744
+V106 Implicit type conversion second argument 's->m_equipment.FreeSpace(slot)' of function 'lua_pushinteger' to memsize type. luaship.cpp 776
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaship.cpp 913
+V106 Implicit type conversion second argument 'fuel' of function 'lua_pushinteger' to memsize type. luaship.cpp 974
+V106 Implicit type conversion second argument 'fuel' of function 'lua_pushinteger' to memsize type. luaship.cpp 1026
+V106 Implicit type conversion second argument 'fuel' of function 'lua_pushinteger' to memsize type. luaship.cpp 1081
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaspace.cpp 36
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaspace.cpp 42
+V111 Call of function 'luaL_error' with variable number of arguments. Fourth argument has memsize type. luaspace.cpp 42
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaspace.cpp 119
+V112 Dangerous magic number 4 used: ...ace_args(l, 4, path, due);. luaspace.cpp 126
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaspace.cpp 201
+V112 Dangerous magic number 4 used: ...cknumber(l, 4);. luaspace.cpp 205
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaspace.cpp 264
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaspace.cpp 325
+V103 Implicit type conversion from memsize to 32-bit type. luaspace.cpp 416
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luaspace.cpp 494
+V112 Dangerous magic number 4 used: ...ettop(l) >= 4) {. luaspacestation.cpp 123
+V112 Dangerous magic number 4 used: ...hecktype(l, 4, LUA_TFUNCT... luaspacestation.cpp 124
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luaspacestation.cpp 138
+V112 Dangerous magic number 4 used: ...ushvalue(l, 4);. luaspacestation.cpp 148
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luaspacestation.cpp 159
+V103 Implicit type conversion from memsize to 32-bit type. luaspacestation.cpp 190
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luaspacestation.cpp 201
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luaspacestation.cpp 212
+V106 Implicit type conversion second argument 'ref' of function 'lua_pushinteger' to memsize type. luaspacestation.cpp 218
+V106 Implicit type conversion second argument 's->GetDockingPortCount()' of function 'lua_pushinteger' to memsize type. luaspacestation.cpp 277
+V104 Implicit conversion of 'idx' to memsize type in an arithmetic expression: idx < sec.m_systems.size() luastarsystem.cpp 250
+V106 Implicit type conversion second argument 'sbody->path.bodyIndex' of function 'lua_pushinteger' to memsize type. luasystembody.cpp 35
+V106 Implicit type conversion second argument 'sbody->seed' of function 'lua_pushinteger' to memsize type. luasystembody.cpp 121
+V106 Implicit type conversion second argument 'sbody->averageTemp' of function 'lua_pushinteger' to memsize type. luasystembody.cpp 370
+V103 Implicit type conversion from memsize to 32-bit type. luasystempath.cpp 63
+V103 Implicit type conversion from memsize to 32-bit type. luasystempath.cpp 64
+V103 Implicit type conversion from memsize to 32-bit type. luasystempath.cpp 65
+V112 Dangerous magic number 4 used: ...kinteger(l, 4);. luasystempath.cpp 70
+V103 Implicit type conversion from memsize to 32-bit type. luasystempath.cpp 70
+V112 Dangerous magic number 4 used: ...gettop(l) > 4) {. luasystempath.cpp 77
+V103 Implicit type conversion from memsize to 32-bit type. luasystempath.cpp 78
+V106 Implicit type conversion second argument 'path->sectorX' of function 'lua_pushinteger' to memsize type. luasystempath.cpp 343
+V106 Implicit type conversion second argument 'path->sectorY' of function 'lua_pushinteger' to memsize type. luasystempath.cpp 364
+V106 Implicit type conversion second argument 'path->sectorZ' of function 'lua_pushinteger' to memsize type. luasystempath.cpp 385
+V106 Implicit type conversion second argument 'path->systemIndex' of function 'lua_pushinteger' to memsize type. luasystempath.cpp 407
+V106 Implicit type conversion second argument 'path->bodyIndex' of function 'lua_pushinteger' to memsize type. luasystempath.cpp 431
+V103 Implicit type conversion from memsize to 32-bit type. luautils.cpp 100
+V103 Implicit type conversion from memsize to 32-bit type. luautils.cpp 101
+V103 Implicit type conversion from memsize to 32-bit type. luautils.cpp 104
+V106 Implicit type conversion second argument 'm + int (x * (n - m + 1))' of function 'lua_pushinteger' to memsize type. luautils.cpp 110
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. luautils.cpp 211
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. luautils.cpp 228
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luautils.cpp 333
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luautils.cpp 335
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. luautils.cpp 337
+V101 Implicit assignment type conversion to memsize type. luavector.cpp 41
+V112 Dangerous magic number 0xFFFFFFFFUL used: state[0] = s & 0xFFFFFFFFUL;... mtrand.cpp 23
+V112 Dangerous magic number 0xFFFFFFFFUL used: state[i] &= 0xFFFFFFFFUL;... mtrand.cpp 29
+V108 Incorrect index type: array[not a memsize-type]. Use memsize type instead. mtrand.cpp 40
+V112 Dangerous magic number 0xFFFFFFFFUL used: state[i] &= 0xFFFFFFFFUL;... mtrand.cpp 41
+V112 Dangerous magic number 0xFFFFFFFFUL used: state[i] &= 0xFFFFFFFFUL;... mtrand.cpp 47
+V112 Dangerous magic number 0x80000000UL used: state[0] = 0x80000000UL;... mtrand.cpp 50
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) col[i... planet.cpp 19
+V119 More than one sizeof() operator is used in one expression. planet.cpp 189
+V112 Dangerous magic number 32 used: ...Step = M_PI/32;. planet.cpp 255
+V112 Dangerous magic number 32 used: if (kills < 32) return 2;. pi.cpp 166
+V112 Dangerous magic number 4 used: ...128) return 4;. pi.cpp 168
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. pi.cpp 397
+V107 Implicit type conversion first argument 'time(0)' of function 'seed' to 32-bit type. pi.cpp 423
+V119 More than one sizeof() operator is used in one expression. pi.cpp 734
+V119 More than one sizeof() operator is used in one expression. pi.cpp 741
+V112 Dangerous magic number 4 used: ...SILE_NAVAL, 4);. pi.cpp 805
+V112 Dangerous magic number 4 used: ...h(1,-1,-1,0,4));... pi.cpp 934
+V112 Dangerous magic number 4 used: ...h(1,-1,-1,0,4), vector3d(... pi.cpp 946
+V112 Dangerous magic number 4 used: opts[4]->onClick.c... pi.cpp 1067
+V112 Dangerous magic number 32 used: ...E_EARTH), w+32, h-80);. pi.cpp 1071
+V112 Dangerous magic number 32 used: ...ERIDANI), w+32, h-48);. pi.cpp 1073
+V112 Dangerous magic number 32 used: ...ME_LAVE), w+32, h-16);. pi.cpp 1075
+V112 Dangerous magic number 32 used: ...E_DEBUG), w+32, h+16);. pi.cpp 1077
+V112 Dangerous magic number 32 used: ...ED_GAME), w+32, h+48);. pi.cpp 1079
+V112 Dangerous magic number 32 used: ...MM_QUIT), w+32, h+80);. pi.cpp 1081
+V112 Dangerous magic number 4 used: ...ICS_TICKS = 4;. pi.cpp 1169
+V106 Implicit type conversion first argument 'SDL_JoystickNumAxes(state->joystick)' of function 'resize' to memsize type. pi.cpp 1339
+V106 Implicit type conversion first argument 'SDL_JoystickNumButtons(state->joystick)' of function 'resize' to memsize type. pi.cpp 1340
+V106 Implicit type conversion first argument 'SDL_JoystickNumHats(state->joystick)' of function 'resize' to memsize type. pi.cpp 1341
+V108 Incorrect index type: joysticks[not a memsize-type]. Use memsize type instead. pi.cpp 1350
+V108 Incorrect index type: joysticks[not a memsize-type]. Use memsize type instead. pi.cpp 1353
+V108 Incorrect index type: joysticks[joystick].buttons[not a memsize-type]. Use memsize type instead. pi.cpp 1353
+V108 Incorrect index type: joysticks[not a memsize-type]. Use memsize type instead. pi.cpp 1361
+V108 Incorrect index type: joysticks[not a memsize-type]. Use memsize type instead. pi.cpp 1364
+V108 Incorrect index type: joysticks[joystick].hats[not a memsize-type]. Use memsize type instead. pi.cpp 1364
+V108 Incorrect index type: joysticks[not a memsize-type]. Use memsize type instead. pi.cpp 1372
+V108 Incorrect index type: joysticks[not a memsize-type]. Use memsize type instead. pi.cpp 1375
+V108 Incorrect index type: joysticks[joystick].axes[not a memsize-type]. Use memsize type instead. pi.cpp 1375
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. player.cpp 157
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. player.cpp 159
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. player.cpp 173
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. player.cpp 177
+V107 Implicit type conversion first argument 'm_dict.size()' of function 'Int32' to 32-bit type. persistsystemdata.h 23
+V108 Incorrect index type: sec.m_systems[not a memsize-type]. Use memsize type instead. polit.cpp 193
+V108 Incorrect index type: sec.m_systems[not a memsize-type]. Use memsize type instead. polit.cpp 194
+V112 Dangerous magic number 4 used: ...rand.Int32(4)!=0;. polit.cpp 227
+V107 Implicit type conversion second argument 'filedata->GetSize()' of function 'SDL_RWFromConstMem' to 32-bit type. sdlwrappers.cpp 13
+V112 Dangerous magic number 4 used: ...nt i=0; i < 4; i++) {. projectile.cpp 59
+V112 Dangerous magic number 4 used: ...nt i=0; i < 4; i++) {. projectile.cpp 78
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 151
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 157
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 158
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 166
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 167
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 217
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 267
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 268
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 271
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. projectile.cpp 274
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. projectile.cpp 303
+V112 Dangerous magic number 32 used: ...ck(char((x>>32)&0xff));. serializer.cpp 33
+V107 Implicit type conversion first argument 'strlen(s) + 1' of function 'Int32' to 32-bit type. serializer.cpp 73
+V107 Implicit type conversion first argument 's.size() + 1' of function 'Int32' to 32-bit type. serializer.cpp 84
+V101 Implicit assignment type conversion to memsize type. serializer.cpp 121
+V112 Dangerous magic number 32 used: ...<40) | (t4<<32) | (t5 << 2... serializer.cpp 158
+V106 Implicit type conversion first argument 'size - 1' of function 'reserve' to memsize type. serializer.cpp 195
+V108 Incorrect index type: (*i).second->m_systems[not a memsize-type]. Use memsize type instead. sectorview.cpp 257
+V108 Incorrect index type: playerSec->m_systems[not a memsize-type]. Use memsize type instead. sectorview.cpp 348
+V108 Incorrect index type: ps->m_systems[not a memsize-type]. Use memsize type instead. sectorview.cpp 404
+V112 Dangerous magic number 4 used: ...mStars() == 4) {. sectorview.cpp 498
+V112 Dangerous magic number 4 used: ...->DrawLines(4, vts, darkg... sectorview.cpp 532
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < ps->m_systems.size() sectorview.cpp 846
+V108 Incorrect index type: ps->m_systems[not a memsize-type]. Use memsize type instead. sectorview.cpp 847
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship-ai.cpp 389
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. ship-ai.cpp 390
+V108 Incorrect index type: f->m_sfx[not a memsize-type]. Use memsize type instead. sfx.cpp 66
+V112 Dangerous magic number 4 used: ...rng.Int32()&4) ? 1.0 : -1.0;. shipaicmd.cpp 300
+V112 Dangerous magic number 4 used: ...rng.Int32()&4) ? 1.0 : -1.0;. shipaicmd.cpp 304
+V112 Dangerous magic number 4 used: ...rng.Int32()&4) ? 1.0 : -1.0;. shipaicmd.cpp 305
+V112 Dangerous magic number 4 used: ...< r) return 4;. shipaicmd.cpp 631
+V112 Dangerous magic number 4 used: ...m_state == -4 && !oversho... shipaicmd.cpp 809
+V112 Dangerous magic number 4 used: m_state = -4; return false;. shipaicmd.cpp 822
+V112 Dangerous magic number 4 used: ...) m_state = 4; }. shipaicmd.cpp 830
+V112 Dangerous magic number 4 used: if (m_state == 4) return true;. shipaicmd.cpp 843
+V112 Dangerous magic number 4 used: ...m_state == 4) {. shipaicmd.cpp 880
+V107 Implicit type conversion first argument 'equip[i].size()' of function 'Int32' to 32-bit type. ship.cpp 29
+V104 Implicit conversion of 'j' to memsize type in an arithmetic expression: j < equip[i].size() ship.cpp 30
+V108 Incorrect index type: equip[i][not a memsize-type]. Use memsize type instead. ship.cpp 31
+V108 Incorrect index type: equip[i][not a memsize-type]. Use memsize type instead. ship.cpp 47
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 306
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 396
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 410
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 411
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 425
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 493
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 557
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 573
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 599
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 824
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. ship.cpp 824
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 1043
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 1064
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. ship.cpp 1228
+V112 Dangerous magic number 4 used: Add(m_clock, 4, 18);. shipcpanel.cpp 154
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) m_map... shipcpanel.cpp 352
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) m_map... shipcpanel.cpp 357
+V112 Dangerous magic number 4 used: ...i = 0; i < 4; i++) {. shipcpanel.cpp 433
+V107 Implicit type conversion first argument 'ships.size()' of function 'Int32' to 32-bit type. shipflavour.cpp 68
+V108 Incorrect index type: ships[not a memsize-type]. Use memsize type instead. shipflavour.cpp 68
+V107 Implicit type conversion first argument 'ships.size()' of function 'Int32' to 32-bit type. shipflavour.cpp 71
+V108 Incorrect index type: ships[not a memsize-type]. Use memsize type instead. shipflavour.cpp 71
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) wr.Fl... shipflavour.cpp 85
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) wr.Fl... shipflavour.cpp 86
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) wr.Fl... shipflavour.cpp 87
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) m->di... shipflavour.cpp 93
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) m->sp... shipflavour.cpp 94
+V112 Dangerous magic number 4 used: ...(int i=0; i<4; i++) m->em... shipflavour.cpp 95
+V112 Dangerous magic number 4 used: ...sgLabel, 0, 4);. shipcpanelmultifuncdisplays.cpp 43
+V107 Implicit type conversion first argument 'vts.size()' of function 'DrawLines2D' to 32-bit type. shipcpanelmultifuncdisplays.cpp 431
+V107 Implicit type conversion first argument 'circ.size()' of function 'DrawLines2D' to 32-bit type. shipcpanelmultifuncdisplays.cpp 444
+V107 Implicit type conversion first argument 'spokes.size()' of function 'DrawLines2D' to 32-bit type. shipcpanelmultifuncdisplays.cpp 452
+V107 Implicit type conversion first argument 'bg.size()' of function 'DrawLines2D' to 32-bit type. shipcpanelmultifuncdisplays.cpp 478
+V107 Implicit type conversion first argument 'v.size()' of function 'DrawLines2D' to 32-bit type. shipcpanelmultifuncdisplays.cpp 490
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. shipcpanelmultifuncdisplays.cpp 572
+V112 Dangerous magic number 32 used: Add(b, 32, 0);. shipcpanelmultifuncdisplays.cpp 586
+V103 Implicit type conversion from memsize to 32-bit type. shiptype.cpp 67
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < lua_rawlen(L, - 1) shiptype.cpp 149
+V106 Implicit type conversion second argument 'i + 1' of function 'lua_pushinteger' to memsize type. shiptype.cpp 150
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. shiptype.cpp 180
+V101 Implicit assignment type conversion to memsize type. sound.cpp 44
+V104 Implicit conversion of 'n' to memsize type in an arithmetic expression: sz * n sound.cpp 47
+V109 Implicit type conversion of return value 'n' to memsize type. sound.cpp 51
+V107 Implicit type conversion third argument 'n' of function 'read' to 32-bit type. sound.cpp 84
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: reinterpret_cast< char * > (inbuf) + i sound.cpp 331
+V108 Incorrect index type: inbuf[not a memsize-type]. Use memsize type instead. sound.cpp 352
+V108 Incorrect index type: inbuf[not a memsize-type]. Use memsize type instead. sound.cpp 357
+V108 Incorrect index type: inbuf[not a memsize-type]. Use memsize type instead. sound.cpp 358
+V108 Incorrect index type: buffer[not a memsize-type]. Use memsize type instead. sound.cpp 363
+V108 Incorrect index type: buffer[not a memsize-type]. Use memsize type instead. sound.cpp 364
+V108 Incorrect index type: buffer[not a memsize-type]. Use memsize type instead. sound.cpp 367
+V108 Incorrect index type: buffer[not a memsize-type]. Use memsize type instead. sound.cpp 368
+V108 Incorrect index type: buffer[not a memsize-type]. Use memsize type instead. sound.cpp 369
+V108 Incorrect index type: buffer[not a memsize-type]. Use memsize type instead. sound.cpp 370
+V112 Dangerous magic number 4 used: pos += 4;. sound.cpp 371
+V104 Implicit conversion of 'len_in_floats' to memsize type in an arithmetic expression: sizeof (float) * len_in_floats sound.cpp 397
+V104 Implicit conversion of 'len_in_floats' to memsize type in an arithmetic expression: sizeof (float) * len_in_floats sound.cpp 398
+V108 Incorrect index type: tmpbuf[not a memsize-type]. Use memsize type instead. sound.cpp 431
+V108 Incorrect index type: (reinterpret_cast<Sint16*>(dsp_buf))[not a memsize-type]. Use memsize type instead. sound.cpp 432
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. sound.cpp 455
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. sound.cpp 460
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. sound.cpp 466
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. sound.cpp 469
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. sound.cpp 487
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression. sound.cpp 492
+V112 Dangerous magic number 4 used: ...th.size() - 4)] = sample;. sound.cpp 502
+V112 Dangerous magic number 4 used: ...name.size()-4)] = sample;. sound.cpp 506
+V103 Implicit type conversion from memsize to 32-bit type. spacestation.cpp 32
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. spacestation.cpp 37
+V106 Implicit type conversion second argument 'i' of function 'lua_pushinteger' to memsize type. spacestation.cpp 39
+V108 Incorrect index type: (*durationArray)[not a memsize-type]. Use memsize type instead. spacestation.cpp 41
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. spacestation.cpp 46
+V106 Implicit type conversion second argument 'port + 1' of function 'lua_pushinteger' to memsize type. spacestation.cpp 75
+V106 Implicit type conversion second argument 'stage' of function 'lua_pushinteger' to memsize type. spacestation.cpp 76
+V112 Dangerous magic number 4 used: ...l(L, 2, 1, -4);. spacestation.cpp 77
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. spacestation.cpp 122
+V106 Implicit type conversion second argument 'port + 1' of function 'lua_pushinteger' to memsize type. spacestation.cpp 124
+V106 Implicit type conversion second argument 'stage' of function 'lua_pushinteger' to memsize type. spacestation.cpp 125
+V107 Implicit type conversion first argument 'm_shipsOnSale.size()' of function 'Int32' to 32-bit type. spacestation.cpp 229
+V107 Implicit type conversion first argument 'orbitalStationTypes.size()' of function 'Int32' to 32-bit type. spacestation.cpp 323
+V108 Incorrect index type: orbitalStationTypes[not a memsize-type]. Use memsize type instead. spacestation.cpp 323
+V107 Implicit type conversion first argument 'surfaceStationTypes.size()' of function 'Int32' to 32-bit type. spacestation.cpp 326
+V108 Incorrect index type: surfaceStationTypes[not a memsize-type]. Use memsize type instead. spacestation.cpp 326
+V108 Incorrect index type: m_shipsOnSale[not a memsize-type]. Use memsize type instead. spacestation.cpp 343
+V107 Implicit type conversion first argument 'm_shipsOnSale.size()' of function 'Int32' to 32-bit type. spacestation.cpp 372
+V108 Incorrect index type: m_type->dockAnimStageDuration[not a memsize-type]. Use memsize type instead. spacestation.cpp 391
+V108 Incorrect index type: m_type->undockAnimStageDuration[not a memsize-type]. Use memsize type instead. spacestation.cpp 392
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. spacestation.cpp 546
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. spacestation.cpp 694
+V107 Implicit type conversion first argument 'm_bodies.size()' of function 'Int32' to 32-bit type. space.cpp 107
+V108 Incorrect index type: m_frameIndex[not a memsize-type]. Use memsize type instead. space.cpp 116
+V108 Incorrect index type: m_bodyIndex[not a memsize-type]. Use memsize type instead. space.cpp 123
+V108 Incorrect index type: m_sbodyIndex[not a memsize-type]. Use memsize type instead. space.cpp 130
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_frameIndex.size() space.cpp 136
+V108 Incorrect index type: m_frameIndex[not a memsize-type]. Use memsize type instead. space.cpp 137
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_bodyIndex.size() space.cpp 145
+V108 Incorrect index type: m_bodyIndex[not a memsize-type]. Use memsize type instead. space.cpp 146
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_sbodyIndex.size() space.cpp 154
+V108 Incorrect index type: m_sbodyIndex[not a memsize-type]. Use memsize type instead. space.cpp 155
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < sbody->children.size() space.cpp 172
+V108 Incorrect index type: sbody->children[not a memsize-type]. Use memsize type instead. space.cpp 173
+V108 Incorrect index type: source_sec.m_systems[not a memsize-type]. Use memsize type instead. space.cpp 259
+V108 Incorrect index type: dest_sec.m_systems[not a memsize-type]. Use memsize type instead. space.cpp 260
+V108 Incorrect index type: StarSystem::starRealColors[not a memsize-type]. Use memsize type instead. star.cpp 56
+V112 Dangerous magic number 4 used: ...SED)), 130, 4*YSEP);. spacestationview.cpp 29
+V112 Dangerous magic number 4 used: ...REE)), 210, 4*YSEP);. spacestationview.cpp 30
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationcommoditymarketform.cpp 25
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationcommoditymarketform.cpp 33
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 54
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 57
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 58
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 59
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 68
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 133
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 143
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 158
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 177
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 181
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 190
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 195
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. stationshipequipmentform.cpp 216
+V108 Incorrect index type: m_station->GetShipsOnSale()[not a memsize-type]. Use memsize type instead. stationshipviewform.cpp 16
+V112 Dangerous magic number 4 used: ...(1,1,0), 0, 4*YSEP);. systeminfoview.cpp 380
+V112 Dangerous magic number 4 used: ...popmsg), 0, 4*YSEP);. systeminfoview.cpp 387
+V119 More than one sizeof() operator is used in one expression. systeminfoview.cpp 469
+V107 Implicit type conversion first argument 'strlen(format)' of function 'parseFormat' to 32-bit type. stringf.cpp 20
+V108 Incorrect index type: format[not a memsize-type]. Use memsize type instead. stringf.cpp 34
+V106 Implicit type conversion third argument 'len' of function 'strncmp' to memsize type. stringf.cpp 36
+V108 Incorrect index type: format[not a memsize-type]. Use memsize type instead. stringf.cpp 94
+V108 Incorrect index type: args[not a memsize-type]. Use memsize type instead. stringf.cpp 443
+V108 Incorrect index type: args[not a memsize-type]. Use memsize type instead. stringf.cpp 444
+V108 Incorrect index type: args[not a memsize-type]. Use memsize type instead. stringf.cpp 445
+V108 Incorrect index type: args[not a memsize-type]. Use memsize type instead. stringf.cpp 453
+V119 More than one sizeof() operator is used in one expression. systemview.cpp 104
+V119 More than one sizeof() operator is used in one expression. systemview.cpp 105
+V119 More than one sizeof() operator is used in one expression. systemview.cpp 109
+V112 Dangerous magic number 4 used: ...NE_LOOP, 0, 4);. systemview.cpp 252
+V112 Dangerous magic number 4 used: ...= n1 + n4 * 4 + n100 * 10... utils.cpp 58
+V112 Dangerous magic number 4 used: ...+ (n100 == 4 || n1 == 4)... utils.cpp 59
+V112 Dangerous magic number 4 used: ...p = (year % 4 == 0 && yea... utils.cpp 60
+V112 Dangerous magic number 4 used: ..._ALIGNMENT, 4);... utils.cpp 152
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. utils.cpp 190
+V108 Incorrect index type: rows[not a memsize-type]. Use memsize type instead. utils.cpp 193
+V108 Incorrect index type: pixel_data[not a memsize-type]. Use memsize type instead. utils.cpp 193
+V108 Incorrect index type: buf[not a memsize-type]. Use memsize type instead. utils.cpp 255
+V108 Incorrect index type: buf[not a memsize-type]. Use memsize type instead. utils.cpp 266
+V112 Dangerous magic number 4 used: ...atrix(-M_PI/4 * frameTime... worldviewcamera.cpp 135
+V112 Dangerous magic number 4 used: ...Matrix(M_PI/4 * frameTime... worldviewcamera.cpp 142
+V112 Dangerous magic number 4 used: ...atrix(-M_PI/4 * frameTime... worldviewcamera.cpp 149
+V112 Dangerous magic number 4 used: ...Matrix(M_PI/4 * frameTime... worldviewcamera.cpp 156
+V112 Dangerous magic number 4 used: ...Matrix(M_PI/4 * frameTime... worldviewcamera.cpp 175
+V112 Dangerous magic number 4 used: ...atrix(-M_PI/4 * frameTime... worldviewcamera.cpp 182
+V119 More than one sizeof() operator is used in one expression. worldview.cpp 84
+V112 Dangerous magic number 32 used: ...nt ypos = i*32;. worldview.cpp 86
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. worldview.cpp 642
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. worldview.cpp 680
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 984
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 988
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 993
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 1002
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 1008
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 1013
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 1017
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 1021
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 1036
+V112 Dangerous magic number 32 used: ypos += 32;. worldview.cpp 1039
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. worldview.cpp 1207
+V108 Incorrect index type: Equip::lasers[not a memsize-type]. Use memsize type instead. worldview.cpp 1210
+V119 More than one sizeof() operator is used in one expression. worldview.cpp 1487
+V119 More than one sizeof() operator is used in one expression. worldview.cpp 1562
+V119 More than one sizeof() operator is used in one expression. worldview.cpp 1583
+V119 More than one sizeof() operator is used in one expression. worldview.cpp 1697
+V112 Dangerous magic number 32 used: ...d(entry, 0, 32);. luamodelviewer.cpp 357
+V112 Dangerous magic number 4 used: ...MISSILE,    4, (GetAnimVa... luamodelviewer.cpp 428
+V108 Incorrect index type: m->pIndex[not a memsize-type]. Use memsize type instead. luamodelviewer.cpp 468
+V108 Incorrect index type: m->pVertex[not a memsize-type]. Use memsize type instead. luamodelviewer.cpp 468
+V108 Incorrect index type: m->pIndex[not a memsize-type]. Use memsize type instead. luamodelviewer.cpp 469
+V108 Incorrect index type: m->pVertex[not a memsize-type]. Use memsize type instead. luamodelviewer.cpp 469
+V108 Incorrect index type: m->pIndex[not a memsize-type]. Use memsize type instead. luamodelviewer.cpp 470
+V108 Incorrect index type: m->pVertex[not a memsize-type]. Use memsize type instead. luamodelviewer.cpp 470
+V107 Implicit type conversion first argument 'points.size()' of function 'DrawLines' to 32-bit type. luamodelviewer.cpp 691
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. luamodelviewer.cpp 713
+V112 Dangerous magic number 4 used: if (argc >= 4) {. luamodelviewer.cpp 733
+V107 Implicit type conversion third argument 'm_fontFileData->GetSize()' of function 'FT_New_Memory_Face' to 32-bit type. font.cpp 20
+V112 Dangerous magic number 4 used: ...= c; return 4;. textsupport.cpp 18
+V112 Dangerous magic number 4 used: return 4;. textsupport.cpp 60
+V117 Memsize type is used in the union. lookup3.c 282
+V117 Memsize type is used in the union. lookup3.c 466
+V117 Memsize type is used in the union. lookup3.c 644
+V108 Incorrect index type: c[not a memsize-type]. Use memsize type instead. vectorfont.cpp 44
+V108 Incorrect index type: points[not a memsize-type]. Use memsize type instead. vectorfont.cpp 51
+V108 Incorrect index type: c[not a memsize-type]. Use memsize type instead. vectorfont.cpp 51
+V108 Incorrect index type: points[not a memsize-type]. Use memsize type instead. vectorfont.cpp 52
+V108 Incorrect index type: c[not a memsize-type]. Use memsize type instead. vectorfont.cpp 52
+V108 Incorrect index type: points[not a memsize-type]. Use memsize type instead. vectorfont.cpp 53
+V108 Incorrect index type: c[not a memsize-type]. Use memsize type instead. vectorfont.cpp 53
+V108 Incorrect index type: a_outline->contours[not a memsize-type]. Use memsize type instead. vectorfont.cpp 67
+V108 Incorrect index type: a_outline->contours[not a memsize-type]. Use memsize type instead. vectorfont.cpp 73
+V108 Incorrect index type: a_outline->tags[not a memsize-type]. Use memsize type instead. vectorfont.cpp 74
+V108 Incorrect index type: a_outline->points[not a memsize-type]. Use memsize type instead. vectorfont.cpp 75
+V108 Incorrect index type: a_outline->points[not a memsize-type]. Use memsize type instead. vectorfont.cpp 76
+V112 Dangerous magic number 4 used: if (len > 4) {. vectorfont.cpp 138
+V112 Dangerous magic number 0x4 used: ...ta->state & 0x4) {. vectorfont.cpp 247
+V112 Dangerous magic number 0x4 used: ...a->state ^= 0x4;. vectorfont.cpp 256
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < strlen(str) vectorfont.cpp 300
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 301
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 306
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < strlen(str) vectorfont.cpp 315
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 316
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 321
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 322
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < strlen(str) vectorfont.cpp 335
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 336
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 340
+V103 Implicit type conversion from memsize to 32-bit type. vectorfont.cpp 354
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 356
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: str + i vectorfont.cpp 358
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 368
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 373
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. vectorfont.cpp 374
+V112 Dangerous magic number 32 used: for (int chr=32; chr<127; c... vectorfont.cpp 398
+V108 Incorrect index type: pts[not a memsize-type]. Use memsize type instead. vectorfont.cpp 425
+V104 Implicit conversion of 'nv * 3' to memsize type in an arithmetic expression: nv * 3 * sizeof (float) vectorfont.cpp 435
+V108 Incorrect index type: glyph.varray[not a memsize-type]. Use memsize type instead. vectorfont.cpp 436
+V108 Incorrect index type: pts[not a memsize-type]. Use memsize type instead. vectorfont.cpp 436
+V104 Implicit conversion of 'glyph.numidx' to memsize type in an arithmetic expression: glyph.numidx * sizeof (Uint16) vectorfont.cpp 439
+V108 Incorrect index type: glyph.iarray[not a memsize-type]. Use memsize type instead. vectorfont.cpp 440
+V108 Incorrect index type: tessdata.index[not a memsize-type]. Use memsize type instead. vectorfont.cpp 440
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 43
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 44
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 53
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 61
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 63
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 88
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 91
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 143
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 186
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 187
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 195
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 202
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 204
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 233
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 234
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: str + i texturefont.cpp 236
+V112 Dangerous magic number 4 used: i+=4;. texturefont.cpp 240
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 245
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 253
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 261
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. texturefont.cpp 263
+V112 Dangerous magic number 4 used: ...har> pixBuf(4*sz*sz);. texturefont.cpp 301
+V112 Dangerous magic number 4 used: const int d = 4*sz*(row+atl... texturefont.cpp 391
+V108 Incorrect index type: pixBuf[not a memsize-type]. Use memsize type instead. texturefont.cpp 393
+V108 Incorrect index type: pixBuf[not a memsize-type]. Use memsize type instead. texturefont.cpp 394
+V108 Incorrect index type: bmStrokeGlyph->bitmap.buffer[not a memsize-type]. Use memsize type instead. texturefont.cpp 394
+V112 Dangerous magic number 4 used: const int d = 4*sz*(row+atl... texturefont.cpp 404
+V108 Incorrect index type: pixBuf[not a memsize-type]. Use memsize type instead. texturefont.cpp 406
+V108 Incorrect index type: bmGlyph->bitmap.buffer[not a memsize-type]. Use memsize type instead. texturefont.cpp 406
+V112 Dangerous magic number 4 used: const int d = 4*sz*(row+atl... texturefont.cpp 437
+V108 Incorrect index type: pixBuf[not a memsize-type]. Use memsize type instead. texturefont.cpp 439
+V108 Incorrect index type: bmGlyph->bitmap.buffer[not a memsize-type]. Use memsize type instead. texturefont.cpp 439
+V111 Call of function 'luaL_error' with variable number of arguments. Third argument has memsize type. customsystem.cpp 40
+V103 Implicit type conversion from memsize to 32-bit type. customsystem.cpp 80
+V103 Implicit type conversion from memsize to 32-bit type. customsystem.cpp 102
+V103 Implicit type conversion from memsize to 32-bit type. customsystem.cpp 122
+V112 Dangerous magic number 4 used: ...(i = 0; i < 4; ++i) {. customsystem.cpp 190
+V103 Implicit type conversion from memsize to 32-bit type. customsystem.cpp 235
+V103 Implicit type conversion from memsize to 32-bit type. customsystem.cpp 340
+V103 Implicit type conversion from memsize to 32-bit type. customsystem.cpp 341
+V112 Dangerous magic number 4 used: ...kinteger(L, 4);. customsystem.cpp 342
+V103 Implicit type conversion from memsize to 32-bit type. customsystem.cpp 342
+V112 Dangerous magic number 4 used: ...i = 0; i < 4; ++i). customsystem.cpp 464
+V112 Dangerous magic number 4 used: ...rng(_init, 4);. sector.cpp 42
+V112 Dangerous magic number 4 used: ...(rng.Int32(4,20) * Galax... sector.cpp 51
+V112 Dangerous magic number 4 used: s.numStars = 4; break;. sector.cpp 57
+V108 Incorrect index type: a->m_systems[not a memsize-type]. Use memsize type instead. sector.cpp 247
+V108 Incorrect index type: b->m_systems[not a memsize-type]. Use memsize type instead. sector.cpp 247
+V112 Dangerous magic number 4 used: ...: chance += 4*dist; break;. sector.cpp 263
+V107 Implicit type conversion second argument 'filedata->GetSize()' of function 'SDL_RWFromConstMem' to 32-bit type. galaxy.cpp 26
+V108 Incorrect index type: static_cast<char*>(s_galaxybmp->pixels)[not a memsize-type]. Use memsize type instead. galaxy.cpp 57
+V112 Dangerous magic number 4 used: fixed(4,10),. starsystem.cpp 197
+V112 Dangerous magic number 4 used: fixed(4,10),... starsystem.cpp 204
+V112 Dangerous magic number 4 used: fixed(4,10),... starsystem.cpp 211
+V112 Dangerous magic number 4 used: fixed(4,10),... starsystem.cpp 218
+V112 Dangerous magic number 4 used: ...uid > fixed(4,5)) {. starsystem.cpp 564
+V112 Dangerous magic number 4 used: ...Gas < fixed(4,1)) thickne... starsystem.cpp 595
+V112 Dangerous magic number 4 used: ...Gas > fixed(4,10))) retur... starsystem.cpp 712
+V112 Dangerous magic number 4 used: ...ife > fixed(4,10)) &&. starsystem.cpp 715
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < children.size() starsystem.cpp 786
+V108 Incorrect index type: children[not a memsize-type]. Use memsize type instead. starsystem.cpp 787
+V108 Incorrect index type: children[not a memsize-type]. Use memsize type instead. starsystem.cpp 788
+V108 Incorrect index type: m_bodies[not a memsize-type]. Use memsize type instead. starsystem.cpp 905
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. starsystem.cpp 956
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1188
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1189
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1203
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1205
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1212
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1220
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1224
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1227
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1237
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1240
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1242
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1247
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1249
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1269
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1272
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1279
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1283
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1285
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1289
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1291
+V112 Dangerous magic number 4 used: m_numStars = 4;. starsystem.cpp 1299
+V108 Incorrect index type: s.m_systems[not a memsize-type]. Use memsize type instead. starsystem.cpp 1304
+V112 Dangerous magic number 4 used: ...centGrav2, 4*minDistSupe... starsystem.cpp 1309
+V108 Incorrect index type: starMetallicities[not a memsize-type]. Use memsize type instead. starsystem.cpp 1318
+V112 Dangerous magic number 4 used: ...numStars == 4) MakePlanet... starsystem.cpp 1323
+V112 Dangerous magic number 4 used: discMin = 4 * primary->... starsystem.cpp 1461
+V112 Dangerous magic number 4 used: discMin = 4 * primary_rad;. starsystem.cpp 1489
+V108 Incorrect index type: StarSystem::starMetallicities[not a memsize-type]. Use memsize type instead. starsystem.cpp 1619
+V108 Incorrect index type: StarSystem::starMetallicities[not a memsize-type]. Use memsize type instead. starsystem.cpp 1622
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < children.size() starsystem.cpp 1805
+V108 Incorrect index type: children[not a memsize-type]. Use memsize type instead. starsystem.cpp 1806
+V108 Incorrect index type: Equip::types[not a memsize-type]. Use memsize type instead. starsystem.cpp 1868
+V112 Dangerous magic number 32 used: ...rand.Int32(32,128);. starsystem.cpp 1913
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < children.size() starsystem.cpp 1925
+V108 Incorrect index type: children[not a memsize-type]. Use memsize type instead. starsystem.cpp 1926
+V112 Dangerous magic number 4 used: ...S = fixed(1,4)*this->Calc... starsystem.cpp 1940
+V112 Dangerous magic number 4 used: ...d orbMinS = 4 * this->rad... starsystem.cpp 1941
+V108 Incorrect index type: activeObjIdxs[not a memsize-type]. Use memsize type instead. bvhtree.cpp 9
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. bvhtree.cpp 11
+V101 Implicit assignment type conversion to memsize type. bvhtree.cpp 13
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. bvhtree.cpp 15
+V101 Implicit assignment type conversion to memsize type. bvhtree.cpp 17
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. bvhtree.cpp 29
+V111 Call of function 'Error' with variable number of arguments. Third argument has memsize type. bvhtree.cpp 29
+V103 Implicit type conversion from memsize to 32-bit type. bvhtree.cpp 32
+V103 Implicit type conversion from memsize to 32-bit type. bvhtree.cpp 37
+V108 Incorrect index type: objs[not a memsize-type]. Use memsize type instead. bvhtree.cpp 38
+V108 Incorrect index type: objPtrs[not a memsize-type]. Use memsize type instead. bvhtree.cpp 38
+V103 Implicit type conversion from memsize to 32-bit type. bvhtree.cpp 47
+V108 Incorrect index type: activeObjIdx[not a memsize-type]. Use memsize type instead. bvhtree.cpp 62
+V108 Incorrect index type: objAabbs[not a memsize-type]. Use memsize type instead. bvhtree.cpp 63
+V108 Incorrect index type: objAabbs[not a memsize-type]. Use memsize type instead. bvhtree.cpp 64
+V108 Incorrect index type: splitBox.min[not a memsize-type]. Use memsize type instead. bvhtree.cpp 84
+V108 Incorrect index type: splitBox.max[not a memsize-type]. Use memsize type instead. bvhtree.cpp 84
+V108 Incorrect index type: activeObjIdx[not a memsize-type]. Use memsize type instead. bvhtree.cpp 88
+V108 Incorrect index type: objAabbs[not a memsize-type]. Use memsize type instead. bvhtree.cpp 89
+V108 Incorrect index type: objAabbs[idx].min[not a memsize-type]. Use memsize type instead. bvhtree.cpp 89
+V108 Incorrect index type: objAabbs[idx].max[not a memsize-type]. Use memsize type instead. bvhtree.cpp 89
+V108 Incorrect index type: splitSides[not a memsize-type]. Use memsize type instead. bvhtree.cpp 91
+V108 Incorrect index type: splitSides[not a memsize-type]. Use memsize type instead. bvhtree.cpp 94
+V108 Incorrect index type: splitBox.max[not a memsize-type]. Use memsize type instead. bvhtree.cpp 102
+V108 Incorrect index type: splitBox.min[not a memsize-type]. Use memsize type instead. bvhtree.cpp 112
+V108 Incorrect index type: splitSides[not a memsize-type]. Use memsize type instead. bvhtree.cpp 126
+V108 Incorrect index type: activeObjIdx[not a memsize-type]. Use memsize type instead. bvhtree.cpp 126
+V108 Incorrect index type: edgeNode->triIndicesStart[not a memsize-type]. Use memsize type instead. geom.cpp 183
+V108 Incorrect index type: edges[not a memsize-type]. Use memsize type instead. geom.cpp 183
+V108 Incorrect index type: GetGeomTree()->m_vertices[not a memsize-type]. Use memsize type instead. geom.cpp 184
+V108 Incorrect index type: edgeNode->triIndicesStart[not a memsize-type]. Use memsize type instead. geom.cpp 188
+V108 Incorrect index type: edges[not a memsize-type]. Use memsize type instead. geom.cpp 188
+V108 Incorrect index type: edgeNode->triIndicesStart[not a memsize-type]. Use memsize type instead. geom.cpp 189
+V108 Incorrect index type: edges[not a memsize-type]. Use memsize type instead. geom.cpp 189
+V108 Incorrect index type: edgeNode->triIndicesStart[not a memsize-type]. Use memsize type instead. geom.cpp 190
+V108 Incorrect index type: edges[not a memsize-type]. Use memsize type instead. geom.cpp 190
+V108 Incorrect index type: edgeNode->triIndicesStart[not a memsize-type]. Use memsize type instead. geom.cpp 193
+V108 Incorrect index type: edges[not a memsize-type]. Use memsize type instead. geom.cpp 193
+V108 Incorrect index type: edgeNode->triIndicesStart[not a memsize-type]. Use memsize type instead. geom.cpp 200
+V108 Incorrect index type: edges[not a memsize-type]. Use memsize type instead. geom.cpp 200
+V108 Incorrect index type: edgeNode->triIndicesStart[not a memsize-type]. Use memsize type instead. geom.cpp 215
+V108 Incorrect index type: edges[not a memsize-type]. Use memsize type instead. geom.cpp 215
+V108 Incorrect index type: m_nodesAlloc[not a memsize-type]. Use memsize type instead. collisionspace.cpp 59
+V103 Implicit type conversion from memsize to 32-bit type. collisionspace.cpp 77
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. collisionspace.cpp 82
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. collisionspace.cpp 86
+V108 Incorrect index type: node->geomStart[not a memsize-type]. Use memsize type instead. collisionspace.cpp 108
+V103 Implicit type conversion from memsize to 32-bit type. collisionspace.cpp 133
+V108 Incorrect index type: aabb.max[not a memsize-type]. Use memsize type instead. collisionspace.cpp 155
+V108 Incorrect index type: aabb.min[not a memsize-type]. Use memsize type instead. collisionspace.cpp 155
+V108 Incorrect index type: (*i)->GetPosition()[not a memsize-type]. Use memsize type instead. collisionspace.cpp 161
+V108 Incorrect index type: m_geoms[not a memsize-type]. Use memsize type instead. collisionspace.cpp 173
+V108 Incorrect index type: m_geoms[not a memsize-type]. Use memsize type instead. collisionspace.cpp 178
+V108 Incorrect index type: node->geomStart[not a memsize-type]. Use memsize type instead. collisionspace.cpp 281
+V108 Incorrect index type: triflags[not a memsize-type]. Use memsize type instead. geomtree.cpp 30
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 41
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 43
+V108 Incorrect index type: indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 46
+V108 Incorrect index type: triflags[not a memsize-type]. Use memsize type instead. geomtree.cpp 46
+V108 Incorrect index type: m_triFlags[not a memsize-type]. Use memsize type instead. geomtree.cpp 55
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 57
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 58
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 59
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 66
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 67
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 68
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < activeTris.size() geomtree.cpp 81
+V108 Incorrect index type: activeTris[not a memsize-type]. Use memsize type instead. geomtree.cpp 82
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 82
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 82
+V108 Incorrect index type: activeTris[not a memsize-type]. Use memsize type instead. geomtree.cpp 83
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 83
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 83
+V108 Incorrect index type: activeTris[not a memsize-type]. Use memsize type instead. geomtree.cpp 84
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 84
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 84
+V108 Incorrect index type: aabbs[not a memsize-type]. Use memsize type instead. geomtree.cpp 85
+V108 Incorrect index type: aabbs[not a memsize-type]. Use memsize type instead. geomtree.cpp 86
+V108 Incorrect index type: aabbs[not a memsize-type]. Use memsize type instead. geomtree.cpp 87
+V107 Implicit type conversion first argument 'activeTris.size()' of function 'BVHTree' to 32-bit type. geomtree.cpp 91
+V103 Implicit type conversion from memsize to 32-bit type. geomtree.cpp 95
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geomtree.cpp 96
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geomtree.cpp 98
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. geomtree.cpp 99
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 107
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 108
+V108 Incorrect index type: m_edges[not a memsize-type]. Use memsize type instead. geomtree.cpp 113
+V108 Incorrect index type: m_edges[not a memsize-type]. Use memsize type instead. geomtree.cpp 114
+V108 Incorrect index type: m_edges[not a memsize-type]. Use memsize type instead. geomtree.cpp 115
+V108 Incorrect index type: m_edges[not a memsize-type]. Use memsize type instead. geomtree.cpp 116
+V108 Incorrect index type: m_edges[not a memsize-type]. Use memsize type instead. geomtree.cpp 117
+V108 Incorrect index type: edgeIdxs[not a memsize-type]. Use memsize type instead. geomtree.cpp 119
+V108 Incorrect index type: aabbs[not a memsize-type]. Use memsize type instead. geomtree.cpp 120
+V108 Incorrect index type: aabbs[not a memsize-type]. Use memsize type instead. geomtree.cpp 121
+V108 Incorrect index type: currnode->triIndicesStart[not a memsize-type]. Use memsize type instead. geomtree.cpp 172
+V104 Implicit conversion of 'numRays' to memsize type in an arithmetic expression: sizeof (vector3f) * numRays geomtree.cpp 198
+V108 Incorrect index type: invDirs[not a memsize-type]. Use memsize type instead. geomtree.cpp 200
+V108 Incorrect index type: a_dirs[not a memsize-type]. Use memsize type instead. geomtree.cpp 200
+V108 Incorrect index type: invDirs[not a memsize-type]. Use memsize type instead. geomtree.cpp 207
+V108 Incorrect index type: isects[not a memsize-type]. Use memsize type instead. geomtree.cpp 207
+V108 Incorrect index type: currnode->triIndicesStart[not a memsize-type]. Use memsize type instead. geomtree.cpp 218
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 231
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 231
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 232
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 232
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 233
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 233
+V108 Incorrect index type: dirs[not a memsize-type]. Use memsize type instead. geomtree.cpp 244
+V108 Incorrect index type: dirs[not a memsize-type]. Use memsize type instead. geomtree.cpp 245
+V108 Incorrect index type: dirs[not a memsize-type]. Use memsize type instead. geomtree.cpp 246
+V108 Incorrect index type: dirs[not a memsize-type]. Use memsize type instead. geomtree.cpp 250
+V108 Incorrect index type: isects[not a memsize-type]. Use memsize type instead. geomtree.cpp 251
+V108 Incorrect index type: isects[not a memsize-type]. Use memsize type instead. geomtree.cpp 252
+V108 Incorrect index type: isects[not a memsize-type]. Use memsize type instead. geomtree.cpp 253
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 261
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 261
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 262
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 262
+V108 Incorrect index type: m_indices[not a memsize-type]. Use memsize type instead. geomtree.cpp 263
+V108 Incorrect index type: m_vertices[not a memsize-type]. Use memsize type instead. geomtree.cpp 263
+V112 Dangerous magic number 4 used: ...subdivs, 0, 4);. drawables.cpp 62
+V111 Call of function 'Error' with variable number of arguments. Second argument has memsize type. graphics.cpp 143
+V104 Implicit conversion of 'm_maxSize' to memsize type in an arithmetic expression: sizeof (T) * m_maxSize rendererglbuffers.h 61
+V104 Implicit conversion of 'm_offset' to memsize type in an arithmetic expression: sizeof (T) * m_offset rendererglbuffers.h 64
+V104 Implicit conversion of 'count' to memsize type in an arithmetic expression: sizeof (T) * count rendererglbuffers.h 64
+V104 Implicit conversion of 'start' to memsize type in an arithmetic expression: start * sizeof (GLushort) rendererglbuffers.h 111
+V112 Dangerous magic number 4 used: glColorPointer(4, GL_FLOAT,... rendererglbuffers.h 129
+V112 Dangerous magic number 4 used: glColorPointer(4, GL_FLOAT,... renderergl2.cpp 67
+V111 Call of function 'Warning' with variable number of arguments. Second argument has memsize type. shader.cpp 40
+V111 Call of function 'Warning' with variable number of arguments. Third argument has memsize type. shader.cpp 40
+V111 Call of function 'Warning' with variable number of arguments. Fourth argument has memsize type. shader.cpp 40
+V111 Call of function 'Warning' with variable number of arguments. Fifth argument has memsize type. shader.cpp 40
+V107 Implicit type conversion first argument 'std::strlen(str)' of function 'push_back' to 32-bit type. shader.cpp 85
+V107 Implicit type conversion first argument 'str.Size()' of function 'push_back' to 32-bit type. shader.cpp 91
+V107 Implicit type conversion second argument 'blocks.size()' of function '__glewShaderSource' to 32-bit type. shader.cpp 97
+V108 Incorrect index type: lights[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 247
+V112 Dangerous magic number 4 used: glColorPointer(4, GL_FLOAT,... rendererlegacy.cpp 296
+V112 Dangerous magic number 4 used: glColorPointer(4, GL_FLOAT,... rendererlegacy.cpp 360
+V112 Dangerous magic number 4 used: glColorPointer(4, GL_FLOAT,... rendererlegacy.cpp 381
+V108 Incorrect index type: positions[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 446
+V112 Dangerous magic number 4 used: glColorPointer(4, GL_FLOAT,... rendererlegacy.cpp 551
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. rendererlegacy.cpp 601
+V108 Incorrect index type: vts[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 603
+V108 Incorrect index type: va->position[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 603
+V108 Incorrect index type: vts[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 604
+V108 Incorrect index type: va->normal[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 604
+V108 Incorrect index type: vts[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 605
+V108 Incorrect index type: va->uv0[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 605
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. rendererlegacy.cpp 614
+V108 Incorrect index type: vts[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 616
+V108 Incorrect index type: va->position[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 616
+V108 Incorrect index type: vts[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 617
+V108 Incorrect index type: va->diffuse[not a memsize-type]. Use memsize type instead. rendererlegacy.cpp 617
+V106 Implicit type conversion first argument 'size' of function 'reserve' to memsize type. vertexarray.cpp 12
+V106 Implicit type conversion first argument 'size' of function 'reserve' to memsize type. vertexarray.cpp 14
+V106 Implicit type conversion first argument 'size' of function 'reserve' to memsize type. vertexarray.cpp 16
+V106 Implicit type conversion first argument 'size' of function 'reserve' to memsize type. vertexarray.cpp 18
+V110 Implicit type conversion of return value 'position.size()' from memsize type to 32-bit type. vertexarray.cpp 34
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 46
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 60
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 72
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 86
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 101
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 126
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 143
+V112 Dangerous magic number 4 used: ...ife > fixed(4,10)) ) {. terrain.cpp 148
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 166
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 185
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 208
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 227
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 243
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 260
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 295
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 308
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 317
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. terrain.cpp 360
+V106 Implicit type conversion third argument 'm_heightMapSizeX * m_heightMapSizeY' of function 'bufread_or_die' to memsize type. terrain.cpp 361
+V121 Implicit conversion of the type of 'new' operator's argument to size_t type. terrain.cpp 377
+V106 Implicit type conversion third argument 'm_heightMapSizeX * m_heightMapSizeY' of function 'bufread_or_die' to memsize type. terrain.cpp 378
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 421
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 422
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 433
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 434
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 445
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 446
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 454
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 455
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 467
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 468
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 480
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 481
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 492
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 493
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 504
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 505
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 515
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 516
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 525
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 526
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 534
+V119 More than one sizeof() operator is used in one expression. terrain.cpp 535
+V112 Dangerous magic number 4 used: ...l, vector3d(4, 3.95, 3.94));. terraincolordesert.cpp 41
+V112 Dangerous magic number 32 used: ...(p.x*8, p.y*32, p.z*8)))*.... terraincolorggjupiter.cpp 25
+V112 Dangerous magic number 32 used: ...(p.x*8, p.y*32, p.z*8)))*.... terraincolorggneptune2.cpp 24
+V112 Dangerous magic number 4 used: ...octavenoise(4, 0.05, 2.0,... terraincolorrock.cpp 21
+V112 Dangerous magic number 4 used: ...octavenoise(4, 0.05, 2.0,... terraincolorrock2.cpp 21
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheighthillscraters.cpp 19
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), p);. terrainheighthillscraters.cpp 35
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheighthillsdunes.cpp 20
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.4, p);. terrainheighthillsdunes.cpp 33
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5*distr... terrainheighthillsdunes.cpp 40
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheighthillscraters2.cpp 19
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), p);. terrainheighthillscraters2.cpp 39
+V112 Dangerous magic number 4 used: SetFracDef(4-m_fracnum,... terrainheighthillsnormal.cpp 22
+V112 Dangerous magic number 4 used: ...(GetFracDef(4-m_fracnum),... terrainheighthillsnormal.cpp 34
+V112 Dangerous magic number 4 used: ...(GetFracDef(4-m_fracnum),... terrainheighthillsnormal.cpp 36
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheighthillsridged.cpp 20
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p);. terrainheighthillsridged.cpp 32
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.55*dist... terrainheighthillsridged.cpp 33
+V112 Dangerous magic number 4 used: SetFracDef(4-m_fracnum,... terrainheightmapped.cpp 21
+V112 Dangerous magic number 4 used: ...(int j=0; j<4; j++) {. terrainheightmapped.cpp 61
+V112 Dangerous magic number 4 used: ...(GetFracDef(4-m_fracnum),... terrainheightmapped.cpp 88
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheighthillsrivers.cpp 20
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5*GetFr... terrainheighthillsrivers.cpp 32
+V112 Dangerous magic number 4 used: ...GetFracDef(4).amplitude... terrainheighthillsrivers.cpp 33
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5*distr... terrainheighthillsrivers.cpp 35
+V112 Dangerous magic number 4 used: ...(int j=0; j<4; j++) {. terrainheightmapped2.cpp 46
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightmountainscraters.cpp 20
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p);. terrainheightmountainscraters.cpp 34
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightmountainsnormal.cpp 16
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p)),... terrainheightmountainsnormal.cpp 102
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p)),... terrainheightmountainsnormal.cpp 107
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightmountainscraters2.cpp 21
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5*distr... terrainheightmountainscraters2.cpp 40
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightmountainsridged.cpp 19
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p);. terrainheightmountainsridged.cpp 37
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p) *. terrainheightmountainsridged.cpp 61
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightmountainsrivers.cpp 18
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.6, p)),... terrainheightmountainsrivers.cpp 105
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p)),... terrainheightmountainsrivers.cpp 112
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p)),... terrainheightmountainsrivers.cpp 117
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightmountainsvolcano.cpp 21
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p);. terrainheightmountainsvolcano.cpp 41
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p) *. terrainheightmountainsvolcano.cpp 83
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightmountainsriversvolcano.cpp 21
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p);. terrainheightmountainsriversvolcano.cpp 41
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p) *. terrainheightmountainsriversvolcano.cpp 153
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p);. terrainheightruggeddesert.cpp 19
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightruggeddesert.cpp 68
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightwatersolidcanyons.cpp 21
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5*. terrainheightwatersolidcanyons.cpp 45
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.55, p),... terrainheightwatersolidcanyons.cpp 48
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5*. terrainheightwatersolidcanyons.cpp 53
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.55, p),... terrainheightwatersolidcanyons.cpp 56
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightwatersolid.cpp 21
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5*. terrainheightwatersolid.cpp 44
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.55, p),... terrainheightwatersolid.cpp 47
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5*. terrainheightwatersolid.cpp 52
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.55, p),... terrainheightwatersolid.cpp 55
+V112 Dangerous magic number 4 used: SetFracDef(4, m_maxHeigh... terrainheightruggedlava.cpp 21
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p);. terrainheightruggedlava.cpp 42
+V112 Dangerous magic number 4 used: ...(GetFracDef(4), 0.5, p) *. terrainheightruggedlava.cpp 75
+V112 Dangerous magic number 4 used: ...s(GL_QUADS, 4, GL_UNSIGNE... gui.cpp 205
+V112 Dangerous magic number 4 used: ...s(GL_QUADS, 4, GL_UNSIGNE... gui.cpp 230
+V104 Implicit conversion of 'i' to memsize type in an arithmetic expression: i < m_states.size() guimultistateimagebutton.cpp 47
+V108 Incorrect index type: m_states[not a memsize-type]. Use memsize type instead. guimultistateimagebutton.cpp 48
+V108 Incorrect index type: m_states[not a memsize-type]. Use memsize type instead. guimultistateimagebutton.cpp 70
+V108 Incorrect index type: m_states[not a memsize-type]. Use memsize type instead. guimultistateimagebutton.cpp 72
+V108 Incorrect index type: m_states[not a memsize-type]. Use memsize type instead. guimultistateimagebutton.cpp 101
+V104 Implicit conversion of 'm_page' to memsize type in an arithmetic expression: m_page != m_pages.size() - 1 guitabbed.cpp 21
+V104 Implicit conversion of '(m_page + 1)' to memsize type in an arithmetic expression: (m_page + 1) % m_pages.size() guitabbed.cpp 50
+V107 Implicit type conversion first argument '(m_page + 1) % m_pages.size()' of function 'SelectPage' to 32-bit type. guitabbed.cpp 50
+V112 Dangerous magic number 32 used: ...ht()/8.0f - 32);. guiscreen.cpp 94
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 59
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 61
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 63
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 65
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 67
+V112 Dangerous magic number 4 used: i+=4;. guitextlayout.cpp 68
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 74
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 86
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 87
+V108 Incorrect index type: str[not a memsize-type]. Use memsize type instead. guitextlayout.cpp 88
+V107 Implicit type conversion first argument 'm_text.size()' of function 'SetCursorPos' to 32-bit type. guitextentry.cpp 26
+V108 Incorrect index type: text[not a memsize-type]. Use memsize type instead. guitextentry.cpp 30
+V103 Implicit type conversion from memsize to 32-bit type. guitextentry.cpp 57
+V108 Incorrect index type: m_text[not a memsize-type]. Use memsize type instead. guitextentry.cpp 64
+V108 Incorrect index type: m_text[not a memsize-type]. Use memsize type instead. guitextentry.cpp 81
+V106 Implicit type conversion second argument 'm_cursPos - 1' of function 'substr' to memsize type. guitextentry.cpp 83
+V106 Implicit type conversion first argument 'm_cursPos' of function 'substr' to memsize type. guitextentry.cpp 83
+V108 Incorrect index type: m_text[not a memsize-type]. Use memsize type instead. guitextentry.cpp 91
+V106 Implicit type conversion second argument 'm_cursPos' of function 'substr' to memsize type. guitextentry.cpp 93
+V106 Implicit type conversion first argument 'm_cursPos + 1' of function 'substr' to memsize type. guitextentry.cpp 93
+V106 Implicit type conversion second argument 'm_cursPos' of function 'find' to memsize type. guitextentry.cpp 109
+V112 Dangerous magic number 4 used: char buf[4];. guitextentry.cpp 133
+V112 Dangerous magic number 4 used: ...->button == 4 || e->butto... guivscrollportal.cpp 90
+V112 Dangerous magic number 4 used: ...->button == 4 ? -0.1 : 0.1;. guivscrollportal.cpp 91
+V112 Dangerous magic number 4 used: ...->button == 4 || e->butto... guivscrollbar.cpp 37
+V112 Dangerous magic number 4 used: ...->button == 4 ? -0.1 : 0.1;. guivscrollbar.cpp 38

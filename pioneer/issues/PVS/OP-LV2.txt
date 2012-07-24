@@ -1,0 +1,91 @@
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 22
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 23
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 24
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 25
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 26
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 27
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 28
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 29
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 30
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 31
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 32
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 33
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 34
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 35
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 36
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 37
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 38
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 39
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 40
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 41
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 42
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 43
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 45
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 47
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 49
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 51
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 56
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 57
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 57
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 58
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 58
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 59
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 59
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 103
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 103
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 133
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 133
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 134
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 134
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 135
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 135
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 136
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 136
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 137
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 137
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. a' with 'const .. &a'. fixed.h 138
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. b' with 'const .. &b'. fixed.h 138
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. p' with 'const .. &p'. aabb.h 17
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. v' with 'const .. &v'. matrix4x4.h 22
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. t' with 'const .. &t'. equipset.h 13
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. p' with 'const .. &p'. perlin.h 7
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. reflist.h 44
+V807 Decreased performance. Consider creating a pointer to avoid using the 'Pi::game->GetSpace()' expression repeatedly. camera.cpp 126
+V807 Decreased performance. Consider creating a reference to avoid using the 'collMesh->GetAabb()' expression repeatedly. cityonplanet.cpp 156
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. f' with 'const .. &f'. dynamicbody.cpp 30
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. f' with 'const .. &f'. dynamicbody.cpp 35
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. t' with 'const .. &t'. dynamicbody.cpp 40
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. f' with 'const .. &f'. dynamicbody.cpp 45
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. t' with 'const .. &t'. dynamicbody.cpp 50
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. t' with 'const .. &t'. dynamicbody.cpp 89
+V807 Decreased performance. Consider creating a reference to avoid using the 'm_player->m_equipment' expression repeatedly. game.cpp 570
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. gamemenuview.cpp 371
+V807 Decreased performance. Consider creating a reference to avoid using the 'm_ops[i].elems' expression repeatedly. lmrmodel.cpp 896
+V807 Decreased performance. Consider creating a reference to avoid using the 'm_ops[i].elems' expression repeatedly. lmrmodel.cpp 941
+V803 Decreased performance. In case 'r_str_it' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. luaconsole.cpp 183
+V803 Decreased performance. In case 'target_iter' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. luaobject.cpp 464
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. luashiptype.cpp 299
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. luaspacestation.cpp 20
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. luastarsystem.cpp 62
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. luastarsystem.cpp 102
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. human_infestedness' with 'const .. &human_infestedness'. polit.cpp 182
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. sectorview.cpp 254
+V803 Decreased performance. In case 'iter' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. sectorview.cpp 922
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. v' with 'const .. &v'. ship-ai.cpp 38
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. v' with 'const .. &v'. ship-ai.cpp 49
+V801 Decreased performance. It is better to redefine the fourth function argument as a reference. Consider replacing 'const .. default_output' with 'const .. &default_output'. shiptype.cpp 74
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. spacestation.cpp 873
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. spacestation.cpp 881
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. spacestation.cpp 899
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. stationbulletinboardform.cpp 64
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. stationshipequipmentform.cpp 116
+V801 Decreased performance. It is better to redefine the first function argument as a reference. Consider replacing 'const .. pos_' with 'const .. &pos_'. terrainbody.cpp 136
+V807 Decreased performance. Consider creating a pointer to avoid using the 'Pi::game->GetSpace()->GetStarSystem()' expression repeatedly. worldview.cpp 838
+V803 Decreased performance. In case 'it' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. sector.cpp 20
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. starsystem.cpp 915
+V807 Decreased performance. Consider creating a reference to avoid using the 's.m_systems[m_path.systemIndex]' expression repeatedly. starsystem.cpp 1188
+V803 Decreased performance. In case 'i' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. starsystem.cpp 2075
+V801 Decreased performance. It is better to redefine the second function argument as a reference. Consider replacing 'const .. pos' with 'const .. &pos'. geom.cpp 30
+V803 Decreased performance. In case 'wpos' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. guitextlayout.cpp 174
+V803 Decreased performance. In case 'wpos' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. guitextlayout.cpp 177
+V803 Decreased performance. In case 'wpos' is iterator it's more effective to use prefix form of increment. Replace iterator++ with ++iterator. guitextlayout.cpp 229

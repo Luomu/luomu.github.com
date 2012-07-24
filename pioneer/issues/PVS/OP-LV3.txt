@@ -1,0 +1,10 @@
+V807 Decreased performance. Consider creating a pointer to avoid using the 'Pi::game->GetSpace()' expression repeatedly. missile.cpp 90
+V807 Decreased performance. Consider creating a pointer to avoid using the 'this->GetSystemBody()' expression repeatedly. planet.cpp 69
+V807 Decreased performance. Consider creating a pointer to avoid using the 'game->GetSpace()' expression repeatedly. pi.cpp 1209
+V807 Decreased performance. Consider creating a reference to avoid using the 'm_system->GetSysPolit()' expression repeatedly. systeminfoview.cpp 372
+V807 Decreased performance. Consider creating a pointer to avoid using the 'Pi::player->GetFrame()' expression repeatedly. worldview.cpp 545
+V807 Decreased performance. Consider creating a reference to avoid using the 'Pi::player->GetPosition()' expression repeatedly. worldview.cpp 549
+V807 Decreased performance. Consider creating a pointer to avoid using the 'g->GetGeomTree()' expression repeatedly. collisionspace.cpp 292
+V807 Decreased performance. Consider creating a pointer to avoid using the '(* i)->GetGeomTree()' expression repeatedly. collisionspace.cpp 330
+V807 Decreased performance. Consider creating a pointer to avoid using the 'm_surface->GetVertices()' expression repeatedly. drawables.cpp 95
+V807 Decreased performance. Consider creating a reference to avoid using the 'l.GetPosition()' expression repeatedly. rendererlegacy.cpp 250

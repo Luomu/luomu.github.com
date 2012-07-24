@@ -1,0 +1,34 @@
+V550 An odd precise comparison: a == b. It's probably better to use a comparison with defined precision: fabs(A - B) < Epsilon. floatcomparison.h 123
+V550 An odd precise comparison: a == b. It's probably better to use a comparison with defined precision: fabs(A - B) < Epsilon. floatcomparison.h 124
+V550 An odd precise comparison: x == 0.0f. It's probably better to use a comparison with defined precision: fabs(A - B) < Epsilon. floatcomparison.h 126
+V550 An odd precise comparison: x == 0.0. It's probably better to use a comparison with defined precision: fabs(A - B) < Epsilon. floatcomparison.h 127
+V524 It is odd that the body of 'Show' function is fully equivalent to the body of 'ShowAll' function (guiwidget.h, line 30). guiwidget.h 31
+V601 The 'true' value is implicitly casted to the integer type. Inspect the fourth argument. ambientsounds.cpp 61
+V566 The integer constant is converted to pointer. Possibly an error or a bad coding style. geosphere.cpp 891
+V566 The integer constant is converted to pointer. Possibly an error or a bad coding style. geosphere.cpp 892
+V525 The code containing the collection of similar blocks. Check items '1', '1', '2' in lines 960, 961, 962. geosphere.cpp 960
+V525 The code containing the collection of similar blocks. Check items '2', '3', '3' in lines 965, 966, 967. geosphere.cpp 965
+V547 Expression '0 <= axis' is always true. Unsigned type value is always >= 0. keybindings.cpp 178
+V566 The integer constant is converted to pointer. Possibly an error or a bad coding style. bufferobject.h 54
+V566 The integer constant is converted to pointer. Possibly an error or a bad coding style. bufferobject.h 56
+V601 The 'true' value is implicitly casted to the integer type. Inspect the second argument. luaplayer.cpp 17
+V576 Incorrect format. Consider checking the seventh actual argument of the '_snprintf' function. The SIGNED integer type argument is expected. luaserializer.cpp 191
+V576 Incorrect format. Consider checking the eighth actual argument of the '_snprintf' function. The SIGNED integer type argument is expected. luaserializer.cpp 191
+V576 Incorrect format. Consider checking the fourth actual argument of the '_snprintf' function. The SIGNED integer type argument is expected. luaserializer.cpp 199
+V601 The 'false' value is implicitly casted to the integer type. Inspect the second argument. luaship.cpp 57
+V601 The 'false' value is implicitly casted to the integer type. Inspect the second argument. luaship.cpp 922
+V601 The 'false' value is implicitly casted to the integer type. Inspect the second argument. luautils.cpp 25
+V565 An empty exception handler. Silent suppression of exceptions can hide the presence of bugs in source code during testing. sectorview.cpp 248
+V601 The 'false' value is implicitly casted to the integer type. Inspect the fourth argument. sound.cpp 158
+V576 Incorrect format. Consider checking the second actual argument of the 'printf' function. The SIGNED integer type argument is expected. luamodelviewer.cpp 497
+V519 The 'l1' variable is assigned values twice successively. Perhaps this is a mistake. Check lines: 25, 30. collisionspace.cpp 30
+V519 The 'l2' variable is assigned values twice successively. Perhaps this is a mistake. Check lines: 26, 31. collisionspace.cpp 31
+V519 The 'l1' variable is assigned values twice successively. Perhaps this is a mistake. Check lines: 133, 138. geomtree.cpp 138
+V519 The 'l2' variable is assigned values twice successively. Perhaps this is a mistake. Check lines: 134, 139. geomtree.cpp 139
+V524 It is odd that the body of 'GLImageFormatForTextureFormat' function is fully equivalent to the body of 'GLTextureFormat' function (texturegl.cpp, line 7). texturegl.cpp 30
+V525 The code containing the collection of similar blocks. Check items '1000.0', '1000.0', '1000.0', '100.0' in lines 14, 15, 16, 17. terraincolorggjupiter.cpp 14
+V525 The code containing the collection of similar blocks. Check items '1000.0', '1000.0', '1000.0', '100.0' in lines 14, 15, 16, 17. terraincolorggneptune2.cpp 14
+V525 The code containing the collection of similar blocks. Check items '1000.0', '10000.0', '100.0', '100.0' in lines 15, 16, 17, 18. terraincolorstarg.cpp 15
+V601 The 'false' value is implicitly casted to the integer type. guiradiobutton.cpp 9
+V601 The 'true' value is implicitly casted to the integer type. guiradiobutton.cpp 30
+V601 The 'false' value is implicitly casted to the integer type. guitogglebutton.cpp 9
