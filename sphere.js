@@ -38,7 +38,7 @@ var fsSource = "varying vec3 vNormal;\
 		vec3 light = normalize(vec3(0.5,0.2,1.0));\
 		float dProd = max(0.0, dot(vNormal, light));\
 		vec3 color = vec3(fade, fade, fade) * dProd;\
-		gl_FragColor = vec4(color.r, color.g, color.b, 1.0);\
+		gl_FragColor = vec4(color.r, 0.4, 0.2, 1.0);\
 	}"
 
 var $container = $('#container');
