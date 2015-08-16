@@ -1,0 +1,45 @@
+<html>
+
+<head>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			text-transform: uppercase;
+			overflow: hidden;
+		}
+		
+		#blinkity {
+			font-family: 'Impact', monospace;
+			font-size: 1000%;
+			
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+	<script>
+		var toggle = function() {
+			var el = document.getElementById('blinkity');
+			if (el.style.display === 'flex') {
+				el.style.display = 'none';
+			} else {
+				el.style.display = 'flex';
+			}
+		}
+		
+		var intv = setInterval(toggle, 600);
+		setTimeout(function() {
+			window.clearInterval(intv);
+			var el = document.getElementById('blinkity');
+			el.style.display = 'flex';
+		}, 10000);
+	</script>
+</head>
+
+<body>
+	<h1 id="blinkity">It's time</h1>
+</body>
+
+</html>
