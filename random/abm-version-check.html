@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>App test</title>
+        <style>
+            body {
+                background-color: #000;
+                color: #fff;
+            }
+            div {
+                font-family: "Verdana";
+                font-size: 1.8em
+            }
+        </style>
+    </head>
+    <script src=https://code.jquery.com/jquery-3.1.1.min.js></script>
+    <body>
+        <img id="icon" src="" />
+        <div id="vers">Version is</div>
+        <div id="rating">Rating 0.0</div>
+    </body>
+    <script>
+        function jsonCallback(json) {
+            //console.log(json);
+            var res = json.results[0];
+            $("#vers").text("Version " + res.version);
+            $("#rating").text("Rating " + res.averageUserRating);
+            $("#icon").attr('src',res.artworkUrl100);
+        }
+        $.ajax({
+            url:"https://itunes.apple.com/lookup?id=1144401880&country=ca",
+            dataType:"jsonp",
+            jsonpCallback: "jsonCallback"
+        });
+    </script>
+</html>
