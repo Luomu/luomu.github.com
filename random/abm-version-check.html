@@ -18,20 +18,27 @@
     <body>
         <img id="icon" src="" />
         <div id="vers">Version is</div>
-        <div id="rating">Rating 0.0</div>
+        <div id="released">Released xxxx</div>
+        <div id="rating">Rating (CA) 0.0</div>
+        <script>
+            function fmtDate(date) {
+                var d = new Date(date);
+                return d.getDay() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear();
+            }
+
+            function jsonCallback(json) {
+                //console.log(json);
+                var res = json.results[0];
+                $("#vers").text("Version " + res.version);
+                $("#rating").text("Rating " + res.averageUserRating);
+                $("#icon").attr('src',res.artworkUrl100);
+                $("#released").text("Released " + fmtDate(res.currentVersionReleaseDate));
+            }
+            $.ajax({
+                url:"https://itunes.apple.com/lookup?id=1144401880&country=ca",
+                dataType:"jsonp",
+                jsonpCallback: "jsonCallback"
+            });
+        </script>
     </body>
-    <script>
-        function jsonCallback(json) {
-            //console.log(json);
-            var res = json.results[0];
-            $("#vers").text("Version " + res.version);
-            $("#rating").text("Rating " + res.averageUserRating);
-            $("#icon").attr('src',res.artworkUrl100);
-        }
-        $.ajax({
-            url:"https://itunes.apple.com/lookup?id=1144401880&country=ca",
-            dataType:"jsonp",
-            jsonpCallback: "jsonCallback"
-        });
-    </script>
 </html>
