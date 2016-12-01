@@ -12,18 +12,23 @@
                 font-family: "Verdana";
                 font-size: 1.8em
             }
+            #parent {
+                size: 130%;
+            }
         </style>
         <script src=https://code.jquery.com/jquery-3.1.1.min.js></script>
     </head>
     <body>
-        <img id="icon" src="" />
-        <div id="vers">Version is</div>
-        <div id="released">Released xxxx</div>
-        <div id="rating">Rating (CA) 0.0</div>
+        <div id="parent">
+            <img id="icon" src="" />
+            <div id="vers">Version is</div>
+            <div id="released">Released xxxx</div>
+            <div id="rating">Rating (CA) 0.0</div>
+        </div>
         <script>
             function fmtDate(date) {
                 var d = new Date(date);
-                return d.getDay() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear();
+                return d.getDate() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear();
             }
 
             function jsonCallback(json) {
