@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>App test</title>
+        <style>
+            body {
+                background-color: #000;
+                color: #fff;
+            }
+            div {
+                font-family: "Verdana";
+            }
+
+            #title {
+                font-size: 2.0em
+            }
+
+            #reviewText {
+                font-size: 1.5em
+            }
+
+            #rating {
+                color: #ff0;
+                font-size: 1.3em
+            }
+        </style>
+    </head>
+    <script src=https://code.jquery.com/jquery-3.1.1.min.js></script>
+    <body>
+        <!--<img id="icon" src="" />-->
+        <div id="title">Title!</div>
+        <div id="reviewText">Content!</div>
+        <div id="rating">5/5</div>
+    </body>
+    <script>
+
+        function report(xmlData)
+        {
+            //jsonize
+            var $this = $(xmlData),
+                item = {
+                    title: $this.find("title").text(),
+                    content: $this.find("content").eq(0).html(),
+                    rating: $this.find("rating").text()
+            }
+            $("#title").text(item.title);
+            $("#reviewText").html(item.content);
+            $("#rating").html(item.rating + "/5");
+        }
+
+        $.get("https://itunes.apple.com/ca/rss/customerreviews/id=1144401880/sortBy=mostRecent/xml", function(data) {
+            var $xml = $(data);
+            var allItms = $xml.find("entry");
+            var random = Math.floor( Math.random() * allItms.length ) + 1;
+
+            report(allItms[random]);
+        });
+    </script>
+</html>
