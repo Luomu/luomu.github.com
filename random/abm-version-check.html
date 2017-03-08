@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>App test</title>
+        <title>Store status</title>
         <style>
             body {
                 background-color: #000;
@@ -16,34 +16,65 @@
                 size: 130%;
             }
         </style>
-        <script src=https://code.jquery.com/jquery-3.1.1.min.js></script>
     </head>
+    <script src=https://code.jquery.com/jquery-3.1.1.min.js></script>
     <body>
-        <div id="parent">
-            <img id="icon" src="" />
-            <div id="vers">Version is</div>
-            <div id="released">Released xxxx</div>
-            <div id="rating">Rating (CA) 0.0</div>
-        </div>
-        <script>
-            function fmtDate(date) {
-                var d = new Date(date);
-                return d.getDate() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear();
-            }
-
-            function jsonCallback(json) {
-                //console.log(json);
-                var res = json.results[0];
-                $("#vers").text("Version " + res.version);
-                $("#rating").text("Rating " + res.averageUserRating);
-                $("#icon").attr('src',res.artworkUrl100);
-                $("#released").text("Released " + fmtDate(res.currentVersionReleaseDate));
-            }
-            $.ajax({
-                url:"https://itunes.apple.com/lookup?id=1144401880&country=ca",
-                dataType:"jsonp",
-                jsonpCallback: "jsonCallback"
-            });
-        </script>
+        <img id="icon" src="" />
+        <div id="vers">Version is</div>
+        <div id="released">Released xxxx</div>
+        <div id="rating_ca">Rating 0.0</div>
+        <div id="rating_au">Rating 0.0</div>
+        <div id="rating_fi">Rating 0.0</div>
     </body>
+    <script>
+        function calcAvgRev(xmlData)
+        {
+            var totlReviews = 0;
+            var totlRating = 0;
+            for (var i = 1; i < xmlData.length; i++)
+            {
+                var entry = $(xmlData[i]);
+                var rating = parseInt(entry.find("im\\:rating, rating").text());
+                if (!isNaN(rating) && rating > 0)
+                {
+                    totlReviews++;
+                    totlRating += parseInt(rating);
+                }
+            }
+            return totlRating / totlReviews;
+        }
+
+        function fmtDate(date) {
+            var d = new Date(date);
+            return d.getDate() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear();
+        }
+
+        function jsonCallback(json) {
+            var res = json.results[0];
+            $("#vers").text("Version " + res.version);
+            $("#released").text("Released " + fmtDate(res.currentVersionReleaseDate));
+            $("#rating").text("Rating " + res.averageUserRating);
+            $("#icon").attr('src',res.artworkUrl100);
+        }
+        $.ajax({
+            url:"https://itunes.apple.com/lookup?id=1144401880&country=ca",
+            dataType:"jsonp",
+            jsonpCallback: "jsonCallback"
+        });
+
+        function getRatingForCountry(country)
+        {
+            var url = "https://itunes.apple.com/" + country + "/rss/customerreviews/id=1144401880/sortBy=mostRecent/xml"
+            $.get(url, function(data) {
+                var $xml = $(data);
+                var allItms = $xml.find("entry");
+                var avgRev = calcAvgRev(allItms);
+                $("#rating_" + country).text("Rating (" + country.toUpperCase() + ")"+ avgRev);
+            });            
+        }
+
+        getRatingForCountry("ca");
+        getRatingForCountry("au");
+        getRatingForCountry("fi");
+    </script>
 </html>
