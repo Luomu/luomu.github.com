@@ -69,8 +69,28 @@
                 var $xml = $(data);
                 var allItms = $xml.find("entry");
                 var avgRev = calcAvgRev(allItms);
-                $("#rating_" + country).text("Rating (" + country.toUpperCase() + ")"+ avgRev);
-            });            
+
+                //store current by date
+                var today = new Date();
+                today.setHours(0,0,0,0);
+                var yesterday = new Date();
+                yesterday.setDate(today.getDate() - 1);
+                yesterday.setHours(0,0,0,0);
+                var storeKey = "rating_" + country;
+                localStorage[storeKey + today.getTime()] = avgRev;
+
+                var ratingText = "Rating (" + country.toUpperCase() + ")"+ avgRev.toFixed(2);
+
+                //calculate change from yesterday
+                var prevRating = localStorage[storeKey + yesterday.getTime()];
+                if (prevRating != undefined)
+                {
+                    diff = (avgRev - prevRating).toFixed(2);
+                    ratingText += " (" + (diff < 0 ? '':'+') + diff + ")";
+                }
+
+                $("#rating_" + country).text(ratingText);
+            });
         }
 
         getRatingForCountry("ca");
