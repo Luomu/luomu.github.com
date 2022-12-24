@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>kimmonmatkatoimisto.com
+  </title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var urlParams = new URLSearchParams(window.location.search);
+      var code = urlParams.get('code')
+      var actualName = "Etunimi Sukunimi"
+      code = atob(code);
+      if (code == "XYP")
+        actualName = "MARI"
+      if (code == "RAP")
+        actualName = "KAI + HEMA"
+      $("#name-placeholder").text(actualName)
+    });
+  </script>
+  <script src="js/snowstorm-min.js"></script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+  <div class="section values">
+    <div class="container">
+      <div class="row">
+        <h3>Onnea</h3>
+        <h2 id="name-placeholder" class="fat-orange">ETUNIMI SUKUNIMI</h2>
+        <h3>Teillä on käytössänne jopa</h3>
+        <h2 class="fat-orange">✨ 740€ ✨</h2>
+        <h3>matkarahaa!</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <h1>TOIMI NÄIN:</h1>
+      </div>
+
+      <div class="row">
+        <div class="one-half column">
+          <h3>1. Unelmoi matkakohteesi</h3>
+          <p>Mieti etukäteen milloin ja minne haluaisit matkustaa. Lahjakortin voi käyttää matkalippuihin, majoitukseen, aurinkorasvaan tai mihin ite haluat.</p>
+        </div>
+        <div class="one-half column">
+          <img src="images/kmt_travel_research.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="one-half column">
+          <h3>2. Ota meihin yhteyttä</h3>
+          <p>Ota yhteyttä matkatoimistomme omistajaan. Suunnittelemme yhdessä matkan yksityiskohdat. Huolehdimme matkakuluista niin saumattomasti kuin mahdollista, tai saat rahat tilillesi.</p>
+        </div>
+        <div class="one-half column">
+          <img src="images/kmt_person_calling.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="one-half column">
+          <h3>3. Valmistaudu lähtöön</h3>
+          <p>Pakkaa matkalaukku ja rentoudu!</p>
+        </div>
+        <div class="one-half column">
+          <img src="images/kmt_travel_dog.jpg">
+        </div>
+      </div>
+
+      <div class="row categories">
+        <h2>Käyttöehdot</h2>
+        <ol>
+          <li>Lahjakortilla ei ole viimeistä käyttöpäivää. Ei hoppua.</li>
+          <li>Kimmon läsnäolo matkalla ei pakollista.</li>
+          <li>Koko summaa ei ole pakko käyttää, mutta oishan se kiva!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="categories footer">
+      Copyright 20XX Kimmon Matkatoimisto International LLC. Kaikki oikeudet pietetään. Matkamuistojen laatua ei taata.
+      Lennon aikana tarjoiltu ruoka saattaa olla kyseenalaista.
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -74,7 +74,7 @@ html {
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
-    padding: 12rem 0 11rem;
+    padding: 10rem 0 10rem;
   }
   .hero {
     padding-bottom: 12rem;
@@ -110,7 +110,7 @@ html {
     font-size: 2.6rem;
   }
   .section {
-    padding: 14rem 0 15rem;
+    padding: 10rem 0 10rem;
   }
   .hero {
     padding: 16rem 0 14rem;
@@ -137,7 +137,7 @@ html {
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 20rem 0 19rem;
+    padding: 10rem 0 10rem;
   }
   .hero {
     padding: 22rem 0;
@@ -163,4 +163,10 @@ html {
   padding: 8rem 0 7rem;
   text-align: center;
   font-size: 65%;
+}
+
+.fat-orange {
+  color: #ffb600;
+  font-weight: 800;
+  text-shadow: 2px 2px #000;
 }
